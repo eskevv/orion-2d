@@ -1,0 +1,4 @@
+namespace DewInterface;
+
+interface IAssetStore
+{ }

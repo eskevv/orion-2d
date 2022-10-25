@@ -1,0 +1,132 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Projects\\OrionFramework\\Orion.csproj": {}
+  },
+  "projects": {
+    "D:\\Projects\\FirstLight\\FirstLight.csproj": {
+      "version": "1.0.2",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\FirstLight\\FirstLight.csproj",
+        "projectName": "FirstLight",
+        "projectPath": "D:\\Projects\\FirstLight\\FirstLight.csproj",
+        "packagesPath": "C:\\Users\\eskevv\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\FirstLight\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "D:\\Projects\\FirstLight\\NuGet.Config",
+          "C:\\Users\\eskevv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://nuget.pkg.github.com/eskevv/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\OrionFramework\\Orion.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\OrionFramework\\Orion.csproj",
+        "projectName": "Orion",
+        "projectPath": "D:\\Projects\\OrionFramework\\Orion.csproj",
+        "packagesPath": "C:\\Users\\eskevv\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\OrionFramework\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\eskevv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Projects\\FirstLight\\FirstLight.csproj": {
+                "projectPath": "D:\\Projects\\FirstLight\\FirstLight.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MonoGame.Content.Builder.Task": {
+              "target": "Package",
+              "version": "[3.8.1.303, )"
+            },
+            "MonoGame.Framework.DesktopGL": {
+              "target": "Package",
+              "version": "[3.8.1.303, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

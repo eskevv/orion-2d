@@ -1,0 +1,5 @@
+* Inventory Sorting
+* Hover Events
+    - interfaces
+    - delegates
+    - ItemCell subtypes
