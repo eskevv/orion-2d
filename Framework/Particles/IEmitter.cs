@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 
-namespace DewInterface;
+namespace Orion;
 
 public interface IEmitter
 {

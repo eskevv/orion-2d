@@ -1,19 +1,19 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
-namespace DewInterface;
+namespace Orion;
 
 public class AnimationManager
 {
-    private readonly Dictionary<object, Animation> _animations = new();
-    private object _lastKey = null!;
+    private readonly Dictionary<int, Animation> _animations = new();
+    private int _lastKey;
     private float _freezeTimer;
     private float _freezeDuration;
 
-    public Animation AddAnimation(object key, Animation animation)
+    public Animation AddAnimation(int key, Animation animation)
     {
         _animations.Add(key, animation);
-        _lastKey ??= key;
+        _lastKey = key;
         return _animations[key];
     }
 
@@ -29,7 +29,7 @@ public class AnimationManager
         _freezeTimer = 0f;
     }
 
-    public void Update(object key)
+    public void Update(int key)
     {
         if (_freezeTimer < _freezeDuration)
         {
@@ -50,25 +50,27 @@ public class AnimationManager
 
         if (_animations.ContainsKey(key))
         {
+            if (_lastKey != key)
+            {
+                _animations[_lastKey].Stop();
+                _animations[_lastKey].Reset();
+            }
             _animations[key].Start();
             _animations[key].Update();
             _lastKey = key;
         }
-        else if (_lastKey is not null)
-        {
-            _animations[_lastKey].Stop();
-            _animations[_lastKey].Reset();
-        }
+        // else if (_lastKey is not null)
+        // {
+        //     _animations[_lastKey].Stop();
+        //     _animations[_lastKey].Reset();
+        // }
 
-        if (key != _lastKey)
-        {
-            _animations[_lastKey!].Reset();
-        }
     }
 
-    public void Draw(Vector2 position)
+    public void Draw(Vector2 position, bool flipped, Vector2? origin = null)
     {
-        if (_lastKey is not null)
-            _animations[_lastKey].Draw(position);
+        // if (_lastKey is not null)
+
+        _animations[_lastKey].Draw(position, flipped, origin);
     }
 }

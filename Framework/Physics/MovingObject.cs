@@ -1,7 +1,7 @@
 using Microsoft.Xna.Framework;
 using System;
 
-namespace DewInterface;
+namespace Orion;
 
 public abstract class MovingObject
 {
@@ -9,8 +9,6 @@ public abstract class MovingObject
     public Vector2 OldPosition { get; protected set; }
     public Vector2 Velocity { get; protected set; }
     public Vector2 OldVelocity { get; protected set; }
-    public Vector2 Scale { get; protected set; }
-    public Vector2 BoundsOffset { get; protected set; }
     public AABB Bounds { get; protected set; }
 
     public Color CollisionIndicator { get; private set; }
@@ -25,17 +23,16 @@ public abstract class MovingObject
 
     private World _world;
 
-    public MovingObject(World world)
+    public MovingObject(float xPos, float yPos, World world)
     {
         _world = world;
+        Position = new Vector2(xPos, yPos);
     }
 
     protected void UpdatePhysics()
     {
         CleanUpFields();
-
         CheckTiles();
-
         UpdateOldFields();
     }
 
@@ -55,9 +52,9 @@ public abstract class MovingObject
     {
         foreach (var item in _world.Colliders)
         {
-            if (!item.Overlaps(Bounds)) 
+            if (!item.Overlaps(Bounds))
                 continue;
-            
+
             CollisionIndicator = Color.MonoGameOrange;
 
             if (Velocity.Y >= 0f && WithGround(item, out float tileTop))
@@ -73,14 +70,14 @@ public abstract class MovingObject
                 Velocity = new Vector2(Velocity.X, 0f);
                 AtCeiling = true;
             }
-            
+
             if (Velocity.X < 0f && WithLeftWall(item, out float tileRight))
             {
                 Position = new Vector2(tileRight + Bounds.HalfSize.X, Position.Y);
                 Velocity = new Vector2(0f, Velocity.Y);
                 PushesLeftWall = true;
             }
-            
+
             if (Velocity.X > 0f && WithRightWall(item, out float tileLeft))
             {
                 Position = new Vector2(tileLeft - Bounds.HalfSize.X, Position.Y);
@@ -104,50 +101,31 @@ public abstract class MovingObject
 
     private bool WithGround(AABB box, out float tileTop)
     {
-        tileTop = 0f;
-
         tileTop = box.Center.Y - box.HalfSize.Y;
-        if (OldPosition.Y + Bounds.HalfSize.Y > tileTop) 
+        if (OldPosition.Y + Bounds.HalfSize.Y > tileTop)
             return false;
-        
-        if (MathF.Abs(box.Center.X - Bounds.Center.X) == box.HalfSize.X + Bounds.HalfSize.X) return false;
-        
-        return true;
+
+        return (MathF.Abs(box.Center.X - Bounds.Center.X) != box.HalfSize.X + Bounds.HalfSize.X);
     }
 
     private bool WithCeiling(AABB box, out float tileBottom)
     {
-        tileBottom = 0f;
-
         tileBottom = box.Center.Y + box.HalfSize.Y;
-        if (OldPosition.Y - Bounds.HalfSize.Y < tileBottom) 
+        if (OldPosition.Y - Bounds.HalfSize.Y < tileBottom)
             return false;
-        
-        if (MathF.Abs(box.Center.X - Bounds.Center.X) == box.HalfSize.X + Bounds.HalfSize.X) return false;
-        
-        return true;
+
+        return (MathF.Abs(box.Center.X - Bounds.Center.X) != box.HalfSize.X + Bounds.HalfSize.X);
     }
 
     private bool WithLeftWall(AABB box, out float tileRight)
     {
-        tileRight = 0f;
-
         tileRight = box.Center.X + box.HalfSize.X;
-        if (OldPosition.X - Bounds.HalfSize.X < tileRight) 
-            return false;
-        
-        return true;
-
+        return (OldPosition.X - Bounds.HalfSize.X >= tileRight);
     }
 
     private bool WithRightWall(AABB box, out float tileLeft)
     {
-        tileLeft = 0f;
-
         tileLeft = box.Center.X - box.HalfSize.X;
-        if (OldPosition.X + Bounds.HalfSize.X > tileLeft) 
-            return false;
-        
-        return true;
+        return (OldPosition.X + Bounds.HalfSize.X <= tileLeft);
     }
 }

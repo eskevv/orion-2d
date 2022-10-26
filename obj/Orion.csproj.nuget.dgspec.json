@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\OrionFramework\\Orion.csproj": {}
+    "D:\\ClassLibs\\OrionFramework\\Orion.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\FirstLight\\FirstLight.csproj": {
+    "D:\\ClassLibs\\FirstLight\\FirstLight.csproj": {
       "version": "1.0.2",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\FirstLight\\FirstLight.csproj",
+        "projectUniqueName": "D:\\ClassLibs\\FirstLight\\FirstLight.csproj",
         "projectName": "FirstLight",
-        "projectPath": "D:\\Projects\\FirstLight\\FirstLight.csproj",
+        "projectPath": "D:\\ClassLibs\\FirstLight\\FirstLight.csproj",
         "packagesPath": "C:\\Users\\eskevv\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\FirstLight\\obj\\",
+        "outputPath": "D:\\ClassLibs\\FirstLight\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "D:\\Projects\\FirstLight\\NuGet.Config",
+          "D:\\ClassLibs\\FirstLight\\NuGet.Config",
           "C:\\Users\\eskevv\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -59,14 +59,14 @@
         }
       }
     },
-    "D:\\Projects\\OrionFramework\\Orion.csproj": {
+    "D:\\ClassLibs\\OrionFramework\\Orion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\OrionFramework\\Orion.csproj",
+        "projectUniqueName": "D:\\ClassLibs\\OrionFramework\\Orion.csproj",
         "projectName": "Orion",
-        "projectPath": "D:\\Projects\\OrionFramework\\Orion.csproj",
+        "projectPath": "D:\\ClassLibs\\OrionFramework\\Orion.csproj",
         "packagesPath": "C:\\Users\\eskevv\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\OrionFramework\\obj\\",
+        "outputPath": "D:\\ClassLibs\\OrionFramework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\eskevv\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projects\\FirstLight\\FirstLight.csproj": {
-                "projectPath": "D:\\Projects\\FirstLight\\FirstLight.csproj"
+              "D:\\ClassLibs\\FirstLight\\FirstLight.csproj": {
+                "projectPath": "D:\\ClassLibs\\FirstLight\\FirstLight.csproj"
               }
             }
           }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/X9c20D+J/YiTVeN2jOYZ24FPk+KCJh4DoPMCEWyTXXBReq9mYfwGp+gQdOKQNz7SvbTaoR9g7dqHb1BV9bC0Q==",
+  "dgSpecHash": "eXX7cyoB3A7MCfcXn6OkIUzEMWVNPCymLdHFm3tfqBLOrrYR9Vlto9jteq4ZLBhM31adci2ku+Z0TelafGAaRg==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\OrionFramework\\Orion.csproj",
+  "projectFilePath": "D:\\ClassLibs\\OrionFramework\\Orion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eskevv\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
     "C:\\Users\\eskevv\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512",

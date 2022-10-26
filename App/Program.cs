@@ -1,3 +1,3 @@
 ﻿
-using var game = new DewInterface.Game1();
+using var game = new Orion.Game1();
 game.Run();

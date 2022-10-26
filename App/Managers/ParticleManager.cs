@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace DewInterface;
+namespace Orion;
 
 public static class ParticleManager
 {

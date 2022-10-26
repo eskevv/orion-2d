@@ -1,7 +1,7 @@
 using System.Runtime.CompilerServices;
 using System;
 
-namespace DewInterface;
+namespace Orion;
 
 public static class Time
 {

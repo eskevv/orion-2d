@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 using System;
-namespace DewInterface;
+namespace Orion;
 
 public static class GameMath
 {

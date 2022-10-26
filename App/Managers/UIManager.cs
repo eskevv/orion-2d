@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 
-namespace DewInterface;
+namespace Orion;
 
 public class UIManager
 {

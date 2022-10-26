@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using System;
 
-namespace DewInterface;
+namespace Orion;
 
 public static class Input
 {

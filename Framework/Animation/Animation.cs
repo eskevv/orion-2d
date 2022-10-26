@@ -3,15 +3,17 @@ using Microsoft.Xna.Framework;
 using System.Collections.Generic;
 using System;
 
-namespace DewInterface;
+namespace Orion;
 
 public class Animation
 {
-    private Texture2D _texture;
+    // -- Properties / Fields
+
     private readonly List<Rectangle> _srcRects = new();
     private readonly Dictionary<int, KeyFrame> _keyFrames = new();
     private readonly int _frames;
     private readonly float _frameTime;
+    private Texture2D _texture;
     private float _frameTimeLeft;
     private int _currentFrame;
     private bool _active = true;
@@ -19,7 +21,12 @@ public class Animation
     private bool _finished;
 
     // -- Arrow Helpers
+
+    private Rectangle SrcRect => _srcRects[_currentFrame];
+    private Vector2 Origin => new Vector2(_srcRects[_currentFrame].Width / 2, _srcRects[_currentFrame].Height / 2);
     public bool KeepAnimating => _playingFull && !_finished;
+
+    // -- Initialization
 
     public Animation(Texture2D texture, int framesX, int framesY, float frameTime, bool playingFull = false, int row = 1)
     {
@@ -34,7 +41,11 @@ public class Animation
 
         for (int i = 0; i < _frames; i++)
             _srcRects.Add(new Rectangle(i * frameWidth, (row - 1) * frameHeight, frameWidth, frameHeight));
+        
+        _currentFrame = (int)GameMath.RandomFloat(0, _frames);
     }
+
+    // -- Public Interface
 
     public void SwitchTexture(Texture2D newTexture)
     {
@@ -80,9 +91,10 @@ public class Animation
         }
     }
 
-    public void Draw(Vector2 position)
+    public void Draw(Vector2 position, bool flipped, Vector2? origin = null)
     {
-        var src = _srcRects[_currentFrame];
-        Batcher.DrawTexture(_texture, position, src, Color.White, 0f, null, 1f, 0);
+        origin = flipped ? origin : Origin;
+        var effect = flipped ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
+        Batcher.DrawTexture(_texture, position, SrcRect, Color.White, 0f, origin, 1f, effect);
     }
 }

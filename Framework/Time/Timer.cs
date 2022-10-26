@@ -1,5 +1,5 @@
 using System;
-namespace DewInterface;
+namespace Orion;
 /// <summary>
 /// private class hiding the implementation of ITimer
 /// </summary>

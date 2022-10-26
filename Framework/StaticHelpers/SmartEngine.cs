@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-namespace DewInterface;
+namespace Orion;
 
 public static class SmartEngine
 {

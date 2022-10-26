@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System.Linq;
 using System;
-namespace DewInterface;
+namespace Orion;
 
 public class WorldMap
 {

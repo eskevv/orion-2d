@@ -1,5 +1,5 @@
 using Microsoft.Xna.Framework;
-namespace DewInterface;
+namespace Orion;
 
 public static class Collision
 {

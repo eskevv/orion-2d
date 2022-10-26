@@ -123,11 +123,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\OrionFramework\\Orion.csproj",
+      "projectUniqueName": "D:\\ClassLibs\\OrionFramework\\Orion.csproj",
       "projectName": "Orion",
-      "projectPath": "D:\\Projects\\OrionFramework\\Orion.csproj",
+      "projectPath": "D:\\ClassLibs\\OrionFramework\\Orion.csproj",
       "packagesPath": "C:\\Users\\eskevv\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\OrionFramework\\obj\\",
+      "outputPath": "D:\\ClassLibs\\OrionFramework\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\eskevv\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -144,8 +144,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Projects\\FirstLight\\FirstLight.csproj": {
-              "projectPath": "D:\\Projects\\FirstLight\\FirstLight.csproj"
+            "D:\\ClassLibs\\FirstLight\\FirstLight.csproj": {
+              "projectPath": "D:\\ClassLibs\\FirstLight\\FirstLight.csproj"
             }
           }
         }

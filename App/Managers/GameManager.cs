@@ -1,23 +1,31 @@
 using Microsoft.Xna.Framework;
-using System.Collections.Generic;
 using System;
+using System.Collections.Generic;
 
-namespace DewInterface;
+namespace Orion;
 
 public class GameManager
 {
-    private readonly IEmitter _particleEmitterRight;
-    private readonly Knight _knight;
-    private readonly Troll _troll;
     public static List<Rectangle> Walls = new();
+    private static List<Troll> _trolls = new();
+
     private static World _world = new();
+    private readonly IEmitter _particleEmitterRight;
+    private WorldMap _worldMap = new("base_level_01");
+    private readonly Knight _knight;
 
     public static List<AABB> WallColliders => _world.Colliders;
 
     public GameManager()
     {
-        _knight = new Knight(200f, 180f, _world);
-        _troll = new Troll(200f, 180f);
+        Camera.Zoom = 3f;
+        Camera.SetLimits(0, Screen.Width, 0, Screen.Height);
+        Camera.Position = Vector2.Zero;
+
+        _knight = new Knight(150f, 180f, _world);
+        _trolls.Add(new Troll(200f, 180f));
+        _trolls.Add(new Troll(200f, 220f));
+        _trolls.Add(new Troll(100f, 220f));
 
         _particleEmitterRight = new StaticEmitter(1200f, 200);
 
@@ -53,23 +61,31 @@ public class GameManager
 
     public void Update()
     {
-        _troll.Update();
+        _trolls.ForEach(x => x.Update());
         _knight.Update();
         ParticleManager.Update();
     }
 
     public void Draw()
     {
-        _troll.Draw();
+        _worldMap.Draw();
+        _trolls.ForEach(x => x.Draw());
         _knight.Draw();
         ParticleManager.DrawParticles();
 
-        foreach (var w in WallColliders)
-        {
-            int xPos = (int)(w.Center.X - w.HalfSize.X);
-            int yPos = (int)(w.Center.Y - w.HalfSize.Y);
-            var box = new Rectangle(xPos, yPos, (int)(w.HalfSize.X * 2), (int)(w.HalfSize.Y * 2));
-            Batcher.DrawRect(box, Color.GhostWhite);
-        }
+        // foreach (var w in WallColliders)
+        // {
+        //     int xPos = (int)(w.Center.X - w.HalfSize.X);
+        //     int yPos = (int)(w.Center.Y - w.HalfSize.Y);
+        //     var box = new Rectangle(xPos, yPos, (int)(w.HalfSize.X * 2), (int)(w.HalfSize.Y * 2));
+        //     Batcher.DrawRect(box, Color.GhostWhite);
+        // }
+    }
+
+    internal static void FireCollisions(Rectangle x)
+    {
+        foreach (var troll in _trolls)
+            if (x.Intersects(troll._hitRect))
+                troll.TakeDamage();
     }
 }

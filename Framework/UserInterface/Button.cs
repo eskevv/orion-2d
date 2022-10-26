@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using System;
 
-namespace DewInterface;
+namespace Orion;
 
 public class Button
 {

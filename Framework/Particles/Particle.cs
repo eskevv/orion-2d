@@ -2,12 +2,10 @@ using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace DewInterface;
+namespace Orion;
 
 public class Particle
 {
-    public bool IsFinished { get; private set; }
-
     private readonly ParticleData _data;
     private Vector2 _position;
     private float _lifespanLeft;
@@ -17,6 +15,8 @@ public class Particle
     private float _scale;
     private Vector2 _origin;
     private Vector2 _direction;
+
+    public bool IsFinished { get; private set; }
 
     public Particle(ParticleData data, Vector2 position)
     {

@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 
-namespace DewInterface;
+namespace Orion;
 
 public class Engine : Game
 {
@@ -32,12 +32,9 @@ public class Engine : Game
         AssetManager.Initialize(Content);
         Camera.Initialize(GraphicsDevice);
         Batcher.Initialize(ShapeBatcher, SpriteBatcher);
+        Screen.Initialize(GraphicsManager);
 
         base.Initialize();
-    }
-
-    protected override void LoadContent()
-    {
     }
 
     protected override void Update(GameTime gameTime)

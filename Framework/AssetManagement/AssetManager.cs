@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Audio;
 using System.Collections.Generic;
 
-namespace DewInterface;
+namespace Orion;
 
 public static class AssetManager 
 {
