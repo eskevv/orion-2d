@@ -1,7 +1,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Orion;
+namespace OrionFramework;
 
 public class ItemCell
 {
@@ -35,7 +35,7 @@ public class ItemCell
         Width = width;
         Height = height;
         Image = image;
-        _hoverEffect = hoverEffect ?? new ScaledHover(1.5f);
+        _hoverEffect = hoverEffect ?? new ScaledHover(2f);
     }
 
     // -- Internal Processing

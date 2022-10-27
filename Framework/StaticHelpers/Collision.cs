@@ -1,5 +1,5 @@
 using Microsoft.Xna.Framework;
-namespace Orion;
+namespace OrionFramework;
 
 public static class Collision
 {

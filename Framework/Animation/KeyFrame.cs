@@ -1,5 +1,5 @@
 using System;
-namespace Orion;
+namespace OrionFramework;
 
 public class KeyFrame
 {

@@ -4,13 +4,11 @@ using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Orion;
+namespace OrionFramework;
 
 public class CellContainer
 {
     // -- Properties / Fields
-
-    public Vector2 Position { get; private set; }
 
     private List<ItemCell> _cells;
     private int _padding;
@@ -18,7 +16,9 @@ public class CellContainer
     private int _cellCount;
     private int _cellSize;
     private int _cellGap;
-    private bool _drawn;
+
+    public Vector2 Position { get; private set; }
+    public bool Drawn { get; private set; }
 
     // -- Helpers
 
@@ -97,7 +97,7 @@ public class CellContainer
         _cells.ForEach(x => x.Reset());
 
         if (Input.Pressed(Keys.I))
-            _drawn = !_drawn;
+            Drawn = !Drawn;
 
         if (ContainerHovered && _cells.TrueForAll(x => !x.IsHovered))
             _cells.ForEach(x => HoveredCell(x));
@@ -105,9 +105,9 @@ public class CellContainer
 
     public void Draw(Color? background = null, Color? cells = null, Color? border = null, Color? cellBorder = null)
     {
-        if (!_drawn)
+        if (!Drawn)
             return;
-            
+
         Batcher.DrawFillRect(Position, ContainerWidth, ContainerHeight, background);
 
         if (border is not null)

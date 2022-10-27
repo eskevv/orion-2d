@@ -1,7 +1,7 @@
 using System;
 using Microsoft.Xna.Framework;
 
-namespace Orion;
+namespace OrionFramework;
 
 public class ParticleEmitter
 {
@@ -11,11 +11,13 @@ public class ParticleEmitter
     private int _emitCount;
     private bool _active;
     private int _maxEmits;
+    private bool _continuous;
 
-    public ParticleEmitter(IEmitter emitter, ParticleEmitterData data)
+    public ParticleEmitter(IEmitter emitter, ParticleEmitterData data, bool continuous = true)
     {
         _emitter = emitter;
         _data = data;
+        _continuous = continuous;
         _intervalLeft = _data.Interval;
     }
 
@@ -34,7 +36,7 @@ public class ParticleEmitter
 
     public void Update()
     {
-        if (!_active)
+        if (!_active && !_continuous)
             return;
             
         _intervalLeft -= Time.DeltaTime;
@@ -52,7 +54,7 @@ public class ParticleEmitter
             _active = false;
     }
 
-    internal void Burst()
+    public void Burst()
     {
         _maxEmits += _data.EmitCount;
         _active = true;

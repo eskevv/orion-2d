@@ -1,31 +1,29 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Orion;
+namespace OrionFramework;
 
 public struct ParticleData
 {
-    private static Texture2D _defaultTexture = null!;
+    public Texture2D Texture = AssetManager.GetAsset<Texture2D>("particle");
 
-    public Texture2D Texture { get; set; } = _defaultTexture ?? AssetManager.GetAsset<Texture2D>("particle");
+    public float LifeSpan = 2f;
 
-    public float LifeSpan { get; set; } = 2f;
+    public Color ColorStart = Color.FloralWhite;
 
-    public Color ColorStart { get; set; } = Color.FloralWhite;
+    public Color ColorEnd = Color.DodgerBlue;
 
-    public Color ColorEnd { get; set; } = Color.DodgerBlue;
+    public float OpacityStart = 1f;
 
-    public float OpacityStart { get; set; } = 1f;
+    public float OpacityEnd = 0f;
 
-    public float OpacityEnd { get; set; } = 0f;
+    public float SizeStart = 8f;
 
-    public float SizeStart { get; set; } = 8f;
+    public float SizeEnd = 8f;
 
-    public float SizeEnd { get; set; } = 8f;
+    public float Speed = 100f;
 
-    public float Speed { get; set; } = 100f;
-
-    public float Angle { get; set; } = 0f;
+    public float Angle = 0f;
 
     public ParticleData()
     { }

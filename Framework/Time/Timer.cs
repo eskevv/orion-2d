@@ -1,5 +1,5 @@
 using System;
-namespace Orion;
+namespace OrionFramework;
 /// <summary>
 /// private class hiding the implementation of ITimer
 /// </summary>

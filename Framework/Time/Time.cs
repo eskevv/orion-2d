@@ -1,7 +1,7 @@
 using System.Runtime.CompilerServices;
 using System;
 
-namespace Orion;
+namespace OrionFramework;
 
 public static class Time
 {

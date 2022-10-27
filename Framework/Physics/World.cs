@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Orion;
+namespace OrionFramework;
 
 public class World
 {

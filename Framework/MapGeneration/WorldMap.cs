@@ -4,7 +4,8 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System.Linq;
 using System;
-namespace Orion;
+
+namespace OrionFramework;
 
 public class WorldMap
 {
@@ -42,12 +43,15 @@ public class WorldMap
     {
         var walls = map.ObjectLayers!.First(x => x.Name == "wall_collisions");
 
-        var created_objects = new List<Rectangle>();
+        var created_objects = new List<AABB>();
 
         foreach (var wall in walls.Objects!)
-            created_objects.Add(new Rectangle((int)wall.X, (int)wall.Y, (int)wall.Width, (int)wall.Height));
+        {
+            var center = new Vector2(wall.X + wall.Width / 2, wall.Y + wall.Height / 2);
+            created_objects.Add(new AABB(center, wall.Width, wall.Height));
+        }
 
-        GameManager.Walls = created_objects;
+        // GameManager.WallColliders = created_objects;
     }
 
     public void Draw()

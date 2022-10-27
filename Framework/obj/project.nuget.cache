@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "hauLQaaroXPA47N8frQ2NBfn7/MMz6miIFNjCEFF3aGgNA2AcnsKI9AhGynuJgo7qgG79Sx89AgyhhsrSYVUEw==",
+  "success": true,
+  "projectFilePath": "D:\\ClassLibs\\OrionFramework\\Framework\\Framework.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\eskevv\\.nuget\\packages\\firstlight\\1.0.2\\firstlight.1.0.2.nupkg.sha512",
+    "C:\\Users\\eskevv\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
+  ],
+  "logs": []
+}

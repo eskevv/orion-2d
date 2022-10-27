@@ -1,7 +1,7 @@
 using Microsoft.Xna.Framework;
 using System;
 
-namespace Orion;
+namespace OrionFramework;
 
 public abstract class MovingObject
 {
@@ -57,11 +57,15 @@ public abstract class MovingObject
 
             CollisionIndicator = Color.MonoGameOrange;
 
+            Console.WriteLine($" #1 {Position.Y - Bounds.HalfSize.Y} -- {item.Center.Y + item.HalfSize.Y}");
+
             if (Velocity.Y >= 0f && WithGround(item, out float tileTop))
             {
                 Position = new Vector2(Position.X, tileTop - Bounds.HalfSize.Y);
                 Velocity = new Vector2(Velocity.X, 0f);
                 OnGround = true;
+
+                Console.WriteLine("GROUND");
             }
 
             if (Velocity.Y < 0f && WithCeiling(item, out float tileBottom))
@@ -69,6 +73,7 @@ public abstract class MovingObject
                 Position = new Vector2(Position.X, tileBottom + Bounds.HalfSize.Y);
                 Velocity = new Vector2(Velocity.X, 0f);
                 AtCeiling = true;
+                Console.WriteLine("CEILING");
             }
 
             if (Velocity.X < 0f && WithLeftWall(item, out float tileRight))
@@ -76,6 +81,7 @@ public abstract class MovingObject
                 Position = new Vector2(tileRight + Bounds.HalfSize.X, Position.Y);
                 Velocity = new Vector2(0f, Velocity.Y);
                 PushesLeftWall = true;
+                Console.WriteLine("LEFT");
             }
 
             if (Velocity.X > 0f && WithRightWall(item, out float tileLeft))
@@ -83,6 +89,7 @@ public abstract class MovingObject
                 Position = new Vector2(tileLeft - Bounds.HalfSize.X, Position.Y);
                 Velocity = new Vector2(0f, Velocity.Y);
                 PushesRightWall = true;
+                Console.WriteLine("RIGHT");
             }
         }
     }
@@ -120,12 +127,19 @@ public abstract class MovingObject
     private bool WithLeftWall(AABB box, out float tileRight)
     {
         tileRight = box.Center.X + box.HalfSize.X;
-        return (OldPosition.X - Bounds.HalfSize.X >= tileRight);
+        return OldPosition.X - Bounds.HalfSize.X >= tileRight && !AboveOrBelow(box);
     }
 
     private bool WithRightWall(AABB box, out float tileLeft)
     {
         tileLeft = box.Center.X - box.HalfSize.X;
-        return (OldPosition.X + Bounds.HalfSize.X <= tileLeft);
+        return (OldPosition.X + Bounds.HalfSize.X <= tileLeft && !AboveOrBelow(box));
+    }
+
+    private bool AboveOrBelow(AABB box)
+    {
+        bool directly_below = OldPosition.Y - Bounds.HalfSize.Y == box.Center.Y + box.HalfSize.Y;
+        bool directly_above = OldPosition.Y + Bounds.HalfSize.Y == box.Center.Y - box.HalfSize.Y;
+        return directly_above || directly_below;
     }
 }

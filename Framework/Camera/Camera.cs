@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 
-namespace Orion;
+namespace OrionFramework;
 
 public static class Camera
 {

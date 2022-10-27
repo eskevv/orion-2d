@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 using System;
-namespace Orion;
+namespace OrionFramework;
 
 public static class GameMath
 {

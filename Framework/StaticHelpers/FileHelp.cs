@@ -1,5 +1,5 @@
 using System.Linq;
-namespace Orion;
+namespace OrionFramework;
 
 public static class FileHelp
 {

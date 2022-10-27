@@ -1,4 +1,4 @@
-namespace Orion;
+namespace OrionFramework;
 
 public class ScaledHover : HoverEffect
 {

@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using System;
 
-namespace Orion;
+namespace OrionFramework;
 
 public static class Input
 {

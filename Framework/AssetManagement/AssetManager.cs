@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Audio;
 using System.Collections.Generic;
 
-namespace Orion;
+namespace OrionFramework;
 
 public static class AssetManager 
 {

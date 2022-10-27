@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework;
 using System.Collections.Generic;
 using System;
 
-namespace Orion;
+namespace OrionFramework;
 
 public class Animation
 {
@@ -12,7 +12,7 @@ public class Animation
     private readonly List<Rectangle> _srcRects = new();
     private readonly Dictionary<int, KeyFrame> _keyFrames = new();
     private readonly int _frames;
-    private readonly float _frameTime;
+    private readonly float[] _frameTimes;
     private Texture2D _texture;
     private float _frameTimeLeft;
     private int _currentFrame;
@@ -31,17 +31,20 @@ public class Animation
     public Animation(Texture2D texture, int framesX, int framesY, float frameTime, bool playingFull = false, int row = 1)
     {
         _texture = texture;
-        _frameTime = frameTime;
         _frameTimeLeft = frameTime;
         _frames = framesX;
+        _frameTimes = new float [_frames];
         _playingFull = playingFull;
 
         int frameWidth = (int)(_texture.Width / framesX);
         int frameHeight = (int)(_texture.Height / framesY);
 
         for (int i = 0; i < _frames; i++)
+        {
             _srcRects.Add(new Rectangle(i * frameWidth, (row - 1) * frameHeight, frameWidth, frameHeight));
-        
+            _frameTimes[i] = frameTime;
+        }
+
         _currentFrame = (int)GameMath.RandomFloat(0, _frames);
     }
 
@@ -70,7 +73,7 @@ public class Animation
     public void Reset()
     {
         _currentFrame = 0;
-        _frameTimeLeft = _frameTime;
+        _frameTimeLeft = _frameTimes[_currentFrame];
     }
 
     public void Update()
@@ -83,7 +86,7 @@ public class Animation
 
         if (_frameTimeLeft <= 0f)
         {
-            _frameTimeLeft += _frameTime;
+            _frameTimeLeft += _frameTimes[_currentFrame];
             _currentFrame = (_currentFrame + 1) % _frames;
 
             if (_keyFrames.ContainsKey(_currentFrame))

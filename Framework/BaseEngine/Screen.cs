@@ -1,7 +1,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Orion;
+namespace OrionFramework;
 
 public static class Screen
 {

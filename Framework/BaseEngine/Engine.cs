@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 
-namespace Orion;
+namespace OrionFramework;
 
 public class Engine : Game
 {

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZRTa2APclieIymXAjdvm0C4LZrWrzKXEjHtI8/psZHcQP9vJ3iWAQWbN2yrA3sBcWBd1nZozzZk2uyFBu/Mneg==",
+  "success": true,
+  "projectFilePath": "D:\\ClassLibs\\OrionFramework\\Tester\\Tester.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\eskevv\\.nuget\\packages\\firstlight\\1.0.2\\firstlight.1.0.2.nupkg.sha512",
+    "C:\\Users\\eskevv\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
+    "C:\\Users\\eskevv\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
+  ],
+  "logs": []
+}

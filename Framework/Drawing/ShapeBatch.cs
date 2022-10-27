@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using System;
 
-namespace Orion;
+namespace OrionFramework;
 
 public class ShapeBatch : IDisposable
 {
