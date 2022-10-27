@@ -19,6 +19,7 @@ public class Animation
     private bool _active = true;
     private bool _playingFull;
     private bool _finished;
+    private Vector2 _origin;
 
     // -- Arrow Helpers
 
@@ -28,16 +29,17 @@ public class Animation
 
     // -- Initialization
 
-    public Animation(Texture2D texture, int framesX, int framesY, float frameTime, bool playingFull = false, int row = 1)
+    public Animation(Texture2D texture, int framesX, int framesY, float frameTime, Vector2? origin = null, bool playingFull = false, int row = 1)
     {
         _texture = texture;
         _frameTimeLeft = frameTime;
         _frames = framesX;
-        _frameTimes = new float [_frames];
+        _frameTimes = new float[_frames];
         _playingFull = playingFull;
 
         int frameWidth = (int)(_texture.Width / framesX);
         int frameHeight = (int)(_texture.Height / framesY);
+        _origin = origin ?? new Vector2(frameWidth, frameHeight);
 
         for (int i = 0; i < _frames; i++)
         {
@@ -94,10 +96,10 @@ public class Animation
         }
     }
 
-    public void Draw(Vector2 position, bool flipped, Vector2? origin = null)
+    public void Draw(Vector2 position, bool flippedH)
     {
-        origin = flipped ? origin : Origin;
-        var effect = flipped ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
+        var effect = flippedH ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
+        var origin = flippedH ? new Vector2(SrcRect.Width - _origin.X, _origin.Y) : _origin;
         Batcher.DrawTexture(_texture, position, SrcRect, Color.White, 0f, origin, 1f, effect);
     }
 }

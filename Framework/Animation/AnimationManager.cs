@@ -67,10 +67,10 @@ public class AnimationManager
 
     }
 
-    public void Draw(Vector2 position, bool flipped, Vector2? origin = null)
+    public void Draw(Vector2 position, bool flipped)
     {
         // if (_lastKey is not null)
 
-        _animations[_lastKey].Draw(position, flipped, origin);
+        _animations[_lastKey].Draw(position, flipped);
     }
 }

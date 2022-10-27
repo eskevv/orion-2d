@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 using System;
 
 namespace Tester;
@@ -32,8 +33,6 @@ public class Game1 : Engine
 
     protected override void LoadContent()
     {
-        base.LoadContent();
-
         AssetManager.RegisterAsset<Texture2D>("icons/16x16/arrow_01b");
         AssetManager.RegisterAsset<Texture2D>("icons/16x16/arrow_03d");
         AssetManager.RegisterAsset<Texture2D>("icons/16x16/book_01g");

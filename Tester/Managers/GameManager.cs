@@ -9,12 +9,11 @@ public class GameManager
     private static List<Troll> _trolls = new();
 
     private static World _world = new();
+    private MapLevel _mapLevel = new("base_level_01");
+
     private readonly IEmitter _particleEmitterRight;
-    private WorldMap _worldMap = new("base_level_01");
     private readonly Knight _knight;
     public static ItemInventory Inventory = new(UIManager._itemWindow);
-
-    public static List<AABB> WallColliders { get; set; } = new();
 
     public GameManager()
     {
@@ -35,7 +34,9 @@ public class GameManager
 
         _particleEmitterRight = new StaticEmitter(1200f, 200);
 
-        foreach (var w in WallColliders)
+        _mapLevel.LoadObjects("wall_collisions");
+
+        foreach (var w in _mapLevel.TileColliders)
             _world.AddCollidingObject(w);
 
         var emitter_dataR = new ParticleEmitterData()
@@ -72,13 +73,13 @@ public class GameManager
 
     public void Draw()
     {
-        _worldMap.Draw();
+        _mapLevel.Draw();
         _trolls.ForEach(x => x.Draw());
         _knight.Draw();
         ParticleManager.DrawParticles();
 
         Loots.ForEach(x => x.Draw());
-        WallColliders.ForEach(x => Batcher.DrawRect(x.AsRectangle, Color.Aqua));
+        _mapLevel.TileColliders.ForEach(x => Batcher.DrawRect(x.AsRectangle, Color.Aqua));
     }
 
     public static void LootItem(Loot loot)

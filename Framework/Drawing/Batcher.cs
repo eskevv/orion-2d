@@ -18,7 +18,7 @@ public static class Batcher
 
     // -- Initialization
 
-    public static void Initialize(ShapeBatch shapeBatch, SpriteBatch spriteBatch)
+    internal static void Initialize(ShapeBatch shapeBatch, SpriteBatch spriteBatch)
     {
         _shapeBatcher = shapeBatch;
         _spriteBatcher = spriteBatch;
@@ -26,14 +26,14 @@ public static class Batcher
 
     // -- Internal Processing
 
-    public static void FlushShapes()
+    private static void FlushShapes()
     {
         _shapeBatcher.End();
         _shapeBatcher.Begin(transformMatrix: _transform);
         _addedShape = false;
     }
 
-    public static void FlushTextures()
+    private static void FlushTextures()
     {
         _spriteBatcher.End();
         _spriteBatcher.Begin(transformMatrix: _transform, samplerState: SamplerState.PointClamp);
@@ -104,7 +104,7 @@ public static class Batcher
         _addedTexture = true;
     }
 
-    internal static void DrawString(string text, Vector2 position, Color color)
+    public static void DrawString(string text, Vector2 position, Color color)
     {
         if (_addedShape)
             FlushShapes();

@@ -1,6 +1,5 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using System;
 
 namespace Tester;
 
@@ -23,24 +22,25 @@ public class Troll
         _textureHit = SmartEngine.ShadeWhite(_texture);
 
         _position = new Vector2(xPos, yPos);
-        _hitRect = new Rectangle((int)xPos - 8, (int)yPos - 8, 16, 16);
+        _hitRect = new Rectangle((int)xPos, (int)yPos, 16, 16);
         _animation.AddAnimation(0, new Animation(_texture, 4, 1, 0.15f));
 
         _emitter = new ParticleEmitter(new StaticEmitter(_position.X, _position.Y), new ParticleEmitterData()
         {
             EmitCount = 10,
             Interval = 0.01f,
-            SpeedMax = 30f,
-            SpeedMin = 25f,
-            AngleVariance = 180,
+            SpeedMax = 70f,
+            SpeedMin = 50f,
+            AngleVariance = 10,
+            LifeSpanMax = 0.5f,
+            LifeSpanMin = 0.2f,
             Data = new ParticleData()
             {
                 ColorStart = Color.Crimson,
                 ColorEnd = Color.WhiteSmoke,
                 SizeStart = 3f,
-                SizeEnd = 8f,
+                SizeEnd = 2f,
                 OpacityEnd = 1f,
-                LifeSpan = 0.1f,
             }
         }, false);
     }
@@ -79,7 +79,7 @@ public class Troll
 
     public void Draw()
     {
-        _animation.Draw(_position, false);
+        _animation.Draw(_position + new Vector2(8, 8), false);
         Batcher.DrawRect(_hitRect, Color.Crimson);
     }
 }

@@ -22,16 +22,16 @@ public class Knight : MovingObject
         var run_texture = AssetManager.GetAsset<Texture2D>("knight_green_run");
         var attack_texture = AssetManager.GetAsset<Texture2D>("knight_green_attack");
 
-        _animator.AddAnimation(1, new Animation(run_texture, 8, 1, 0.13f));
+        _animator.AddAnimation(1, new Animation(run_texture, 8, 1, 0.13f, new Vector2(8, 9)));
 
-        var att = new Animation(attack_texture, 13, 1, 0.085f, true);
+        var att = new Animation(attack_texture, 13, 1, 0.085f, new Vector2(8, 9), true);
         att.AddKeyFrame(3, FrameHit);
         att.AddKeyFrame(5, FrameHit);
         att.AddKeyFrame(8, FrameHit);
         att.AddKeyFrame(12, FrameHit);
 
         _animator.AddAnimation(2, att);
-        _animator.AddAnimation(0, new Animation(idle_texture, 4, 1, 0.13f));
+        _animator.AddAnimation(0, new Animation(idle_texture, 4, 1, 0.13f, new Vector2(6, 9)));
         _animationImage = 0;
     }
 
@@ -41,7 +41,7 @@ public class Knight : MovingObject
         _attacks.Clear();
         _animator.Update(_animationImage);
 
-        Velocity = Input.RawAxes * 1.8f;
+        Velocity = Input.RawAxes * 1.2f;
         UpdatePhysics();
 
         if (Velocity.X != 0f)
@@ -60,7 +60,7 @@ public class Knight : MovingObject
 
     public void Draw()
     {
-        _animator.Draw(Position, false /*, new Vector2(14, 9) */);
+        _animator.Draw(Position, _flipped);
         Batcher.DrawRect(Bounds.Center - Bounds.HalfSize, Bounds.HalfSize.X * 2, Bounds.HalfSize.Y * 2, Color.BlueViolet);
         // _attacks.ForEach(x => Batcher.DrawRect(x, Color.GhostWhite));
     }
