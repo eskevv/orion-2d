@@ -4,6 +4,61 @@
     "D:\\ClassLibs\\OrionFramework\\Framework\\Framework.csproj": {}
   },
   "projects": {
+    "D:\\ClassLibs\\FirstLight\\FirstLight.csproj": {
+      "version": "1.1.2",
+      "restore": {
+        "projectUniqueName": "D:\\ClassLibs\\FirstLight\\FirstLight.csproj",
+        "projectName": "FirstLight",
+        "projectPath": "D:\\ClassLibs\\FirstLight\\FirstLight.csproj",
+        "packagesPath": "C:\\Users\\eskevv\\.nuget\\packages\\",
+        "outputPath": "D:\\ClassLibs\\FirstLight\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "D:\\ClassLibs\\FirstLight\\NuGet.Config",
+          "C:\\Users\\eskevv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://nuget.pkg.github.com/eskevv/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\ClassLibs\\OrionFramework\\Framework\\Framework.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +82,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\ClassLibs\\FirstLight\\FirstLight.csproj": {
+                "projectPath": "D:\\ClassLibs\\FirstLight\\FirstLight.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -44,9 +103,9 @@
               "target": "Package",
               "version": "[3.8.1.303, )"
             },
-            "firstlight": {
+            "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[1.0.2, )"
+              "version": "[13.0.1, )"
             }
           },
           "imports": [

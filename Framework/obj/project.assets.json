@@ -2,15 +2,6 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "FirstLight/1.0.2": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/FirstLight.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0/FirstLight.dll": {}
-        }
-      },
       "MonoGame.Framework.DesktopGL/3.8.1.303": {
         "type": "package",
         "compile": {
@@ -56,22 +47,33 @@
             "rid": "win-x86"
           }
         }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FirstLight/1.1.2": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/FirstLight.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FirstLight.dll": {}
+        }
       }
     }
   },
   "libraries": {
-    "FirstLight/1.0.2": {
-      "sha512": "Whf7bc0UqdAYybKl41tq/AqSDuMYDXpALrzxe1OOoXYM/3/UzFIfrcSc2iHa1IntpArDhS4z9NERUyI8vxxdOg==",
-      "type": "package",
-      "path": "firstlight/1.0.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "firstlight.1.0.2.nupkg.sha512",
-        "firstlight.nuspec",
-        "lib/net6.0/FirstLight.dll"
-      ]
-    },
     "MonoGame.Framework.DesktopGL/3.8.1.303": {
       "sha512": "eGYhqn0n1olk8MNYeE9EuBmoNNECN1T18rPMaQpkzsEQ0H3nVyFPXC+uCo78v5pi5juQpJ3PSFnSkjzZJ1U58A==",
       "type": "package",
@@ -93,12 +95,45 @@
         "runtimes/win-x86/native/SDL2.dll",
         "runtimes/win-x86/native/soft_oal.dll"
       ]
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "FirstLight/1.1.2": {
+      "type": "project",
+      "path": "../../FirstLight/FirstLight.csproj",
+      "msbuildProject": "../../FirstLight/FirstLight.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "FirstLight >= 1.1.2",
       "MonoGame.Framework.DesktopGL >= 3.8.1.303",
-      "firstlight >= 1.0.2"
+      "Newtonsoft.Json >= 13.0.1"
     ]
   },
   "packageFolders": {
@@ -127,7 +162,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\ClassLibs\\FirstLight\\FirstLight.csproj": {
+              "projectPath": "D:\\ClassLibs\\FirstLight\\FirstLight.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -144,9 +183,9 @@
             "target": "Package",
             "version": "[3.8.1.303, )"
           },
-          "firstlight": {
+          "Newtonsoft.Json": {
             "target": "Package",
-            "version": "[1.0.2, )"
+            "version": "[13.0.1, )"
           }
         },
         "imports": [

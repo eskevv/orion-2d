@@ -1,0 +1,7 @@
+{
+  "arrow": {
+    "speed": 3,
+    "lifespan": 1.8,
+    "damage": 5
+  }
+}

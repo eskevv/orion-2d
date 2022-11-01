@@ -8,19 +8,12 @@
     ".NETCoreApp,Version=v6.0": {
       "Framework/1.0.0": {
         "dependencies": {
+          "FirstLight": "1.1.2",
           "MonoGame.Framework.DesktopGL": "3.8.1.303",
-          "FirstLight": "1.0.2"
+          "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
           "Framework.dll": {}
-        }
-      },
-      "FirstLight/1.0.2": {
-        "runtime": {
-          "lib/net6.0/FirstLight.dll": {
-            "assemblyVersion": "1.0.2.0",
-            "fileVersion": "1.0.2.0"
-          }
         }
       },
       "MonoGame.Framework.DesktopGL/3.8.1.303": {
@@ -72,6 +65,19 @@
             "fileVersion": "0.0.0.0"
           }
         }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
+          }
+        }
+      },
+      "FirstLight/1.1.2": {
+        "runtime": {
+          "FirstLight.dll": {}
+        }
       }
     }
   },
@@ -81,19 +87,24 @@
       "serviceable": false,
       "sha512": ""
     },
-    "FirstLight/1.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Whf7bc0UqdAYybKl41tq/AqSDuMYDXpALrzxe1OOoXYM/3/UzFIfrcSc2iHa1IntpArDhS4z9NERUyI8vxxdOg==",
-      "path": "firstlight/1.0.2",
-      "hashPath": "firstlight.1.0.2.nupkg.sha512"
-    },
     "MonoGame.Framework.DesktopGL/3.8.1.303": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-eGYhqn0n1olk8MNYeE9EuBmoNNECN1T18rPMaQpkzsEQ0H3nVyFPXC+uCo78v5pi5juQpJ3PSFnSkjzZJ1U58A==",
       "path": "monogame.framework.desktopgl/3.8.1.303",
       "hashPath": "monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "FirstLight/1.1.2": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

@@ -10,3 +10,6 @@ D:\ClassLibs\OrionFramework\Framework\obj\Debug\net6.0\Framework.dll
 D:\ClassLibs\OrionFramework\Framework\obj\Debug\net6.0\refint\Framework.dll
 D:\ClassLibs\OrionFramework\Framework\obj\Debug\net6.0\Framework.pdb
 D:\ClassLibs\OrionFramework\Framework\obj\Debug\net6.0\ref\Framework.dll
+D:\ClassLibs\OrionFramework\Framework\bin\Debug\net6.0\FirstLight.dll
+D:\ClassLibs\OrionFramework\Framework\bin\Debug\net6.0\FirstLight.pdb
+D:\ClassLibs\OrionFramework\Framework\obj\Debug\net6.0\Framework.csproj.CopyComplete
