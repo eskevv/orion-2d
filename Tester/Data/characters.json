@@ -1,0 +1,14 @@
+{
+    "hero": {
+        "texture": "basic_bow_idle_01",
+        "speed" : 0.8,
+        "damage" : 5,
+        "ability" : "slice"
+    },
+    "barbarian" : {
+        "texture": "barbarian_idle_01",
+        "speed" : 4,
+        "damage" : 9,
+        "ability" : "crush"
+    }
+}
