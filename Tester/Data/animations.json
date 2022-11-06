@@ -1,0 +1,72 @@
+{
+  "basic_bow_idle": {
+    "textureName": "animations/basic_bow_idle",
+    "ox": 7,
+    "oy": 8,
+    "frames": [
+      90,
+      90,
+      90,
+      90
+    ]
+  },
+  "basic_bow_attack": {
+    "textureName": "animations/basic_bow_attack",
+    "keyFrames": {
+      "6": "ShootArrow"
+    },
+    "ox": 7,
+    "oy": 8,
+    "frames": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+    ]
+  },
+  "basic_bow_run": {
+    "textureName": "animations/basic_bow_run",
+    "ox": 7,
+    "oy": 8,
+    "frames": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+    ]
+  },
+  "dwarf_idle": {
+    "textureName": "animations/dwarf_idle",
+    "ox": 6,
+    "oy": 8,
+    "frames": [
+      100,
+      140,
+      90,
+      110
+    ]
+  },
+  "dwarf_run": {
+    "textureName": "animations/dwarf_run",
+    "ox": 6,
+    "oy": 8,
+    "frames": [
+      100,
+      140,
+      90,
+      110,
+      90,
+      90,
+      90,
+      90
+    ]
+  }
+}

@@ -1,4 +1,0 @@
-namespace OrionFramework;
-
-interface IAssetStore
-{ }

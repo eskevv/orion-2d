@@ -1,8 +1,8 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"D:/ClassLibs/OrionFramework/Tester/Content/arrow.png","D:/ClassLibs/OrionFramework/Tester/Content/bin/DesktopGL/Content/arrow.xnb","TextureProcessor","Texture2DContent",163,533,0.1067643
-"D:/ClassLibs/OrionFramework/Tester/Content/barbarian_idle_01.png","D:/ClassLibs/OrionFramework/Tester/Content/bin/DesktopGL/Content/barbarian_idle_01.xnb","TextureProcessor","Texture2DContent",288,1685,0.0999062
-"D:/ClassLibs/OrionFramework/Tester/Content/basic_bow_idle_01.png","D:/ClassLibs/OrionFramework/Tester/Content/bin/DesktopGL/Content/basic_bow_idle_01.xnb","TextureProcessor","Texture2DContent",262,1109,0.0915796
-"D:/ClassLibs/OrionFramework/Tester/Content/cursor_normal.png","D:/ClassLibs/OrionFramework/Tester/Content/bin/DesktopGL/Content/cursor_normal.xnb","TextureProcessor","Texture2DContent",156,1109,0.0928547
-"D:/ClassLibs/OrionFramework/Tester/Content/forest_tileset.png","D:/ClassLibs/OrionFramework/Tester/Content/bin/DesktopGL/Content/forest_tileset.xnb","TextureProcessor","Texture2DContent",16049,304213,0.1233038
-"D:/ClassLibs/OrionFramework/Tester/Content/gameFont.spritefont","D:/ClassLibs/OrionFramework/Tester/Content/bin/DesktopGL/Content/gameFont.xnb","FontDescriptionProcessor","SpriteFontContent",2009,13343,0.0786663
-"D:/ClassLibs/OrionFramework/Tester/Content/rhino_idle_01.png","D:/ClassLibs/OrionFramework/Tester/Content/bin/DesktopGL/Content/rhino_idle_01.xnb","TextureProcessor","Texture2DContent",192,1109,0.0036662
+"D:/ClassLibs/OrionFramework/Tester/Content/gameFont.spritefont","D:/ClassLibs/OrionFramework/Tester/Content/bin/DesktopGL/Content/gameFont.xnb","FontDescriptionProcessor","SpriteFontContent",2009,13343,0.2194677
+"D:/ClassLibs/OrionFramework/Tester/Content/grass-tile-2.png","D:/ClassLibs/OrionFramework/Tester/Content/bin/DesktopGL/Content/grass-tile-2.xnb","TextureProcessor","Texture2DContent",2149,9301,0.0082932
+"D:/ClassLibs/OrionFramework/Tester/Content/grass-tile-3.png","D:/ClassLibs/OrionFramework/Tester/Content/bin/DesktopGL/Content/grass-tile-3.xnb","TextureProcessor","Texture2DContent",2214,9301,0.0009049
+"D:/ClassLibs/OrionFramework/Tester/Content/grass-tile.png","D:/ClassLibs/OrionFramework/Tester/Content/bin/DesktopGL/Content/grass-tile.xnb","TextureProcessor","Texture2DContent",2158,9301,0.1062134
+"D:/ClassLibs/OrionFramework/Tester/Content/hero.png","D:/ClassLibs/OrionFramework/Tester/Content/bin/DesktopGL/Content/hero.xnb","TextureProcessor","Texture2DContent",2324,12373,0.0946248
+"D:/ClassLibs/OrionFramework/Tester/Content/npc.png","D:/ClassLibs/OrionFramework/Tester/Content/bin/DesktopGL/Content/npc.xnb","TextureProcessor","Texture2DContent",2765,12373,0.0010889
+"D:/ClassLibs/OrionFramework/Tester/Content/tileset.png","D:/ClassLibs/OrionFramework/Tester/Content/bin/DesktopGL/Content/tileset.xnb","TextureProcessor","Texture2DContent",28123,405589,0.0089837

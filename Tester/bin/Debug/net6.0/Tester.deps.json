@@ -8,10 +8,10 @@
     ".NETCoreApp,Version=v6.0": {
       "Tester/1.0.0": {
         "dependencies": {
-          "Framework": "1.0.0",
           "MonoGame.Content.Builder.Task": "3.8.1.303",
           "MonoGame.Framework.DesktopGL": "3.8.1.303",
-          "Newtonsoft.Json": "13.0.1"
+          "Newtonsoft.Json": "13.0.1",
+          "OrionFramework": "1.0.0"
         },
         "runtime": {
           "Tester.dll": {}
@@ -81,14 +81,14 @@
           "FirstLight.dll": {}
         }
       },
-      "Framework/1.0.0": {
+      "OrionFramework/1.0.0": {
         "dependencies": {
           "FirstLight": "1.1.2",
           "MonoGame.Framework.DesktopGL": "3.8.1.303",
           "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
-          "Framework.dll": {}
+          "OrionFramework.dll": {}
         }
       }
     }
@@ -125,7 +125,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Framework/1.0.0": {
+    "OrionFramework/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

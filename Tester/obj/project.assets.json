@@ -78,7 +78,7 @@
           "bin/placeholder/FirstLight.dll": {}
         }
       },
-      "Framework/1.0.0": {
+      "OrionFramework/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -87,10 +87,10 @@
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
-          "bin/placeholder/Framework.dll": {}
+          "bin/placeholder/OrionFramework.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Framework.dll": {}
+          "bin/placeholder/OrionFramework.dll": {}
         }
       }
     }
@@ -164,18 +164,18 @@
       "path": "../../FirstLight/FirstLight.csproj",
       "msbuildProject": "../../FirstLight/FirstLight.csproj"
     },
-    "Framework/1.0.0": {
+    "OrionFramework/1.0.0": {
       "type": "project",
-      "path": "../Framework/Framework.csproj",
-      "msbuildProject": "../Framework/Framework.csproj"
+      "path": "../OrionFramework/OrionFramework.csproj",
+      "msbuildProject": "../OrionFramework/OrionFramework.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Framework >= 1.0.0",
       "MonoGame.Content.Builder.Task >= 3.8.1.303",
       "MonoGame.Framework.DesktopGL >= 3.8.1.303",
-      "Newtonsoft.Json >= 13.0.1"
+      "Newtonsoft.Json >= 13.0.1",
+      "OrionFramework >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -205,8 +205,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\ClassLibs\\OrionFramework\\Framework\\Framework.csproj": {
-              "projectPath": "D:\\ClassLibs\\OrionFramework\\Framework\\Framework.csproj"
+            "D:\\ClassLibs\\OrionFramework\\OrionFramework\\OrionFramework.csproj": {
+              "projectPath": "D:\\ClassLibs\\OrionFramework\\OrionFramework\\OrionFramework.csproj"
             }
           }
         }
@@ -250,7 +250,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
