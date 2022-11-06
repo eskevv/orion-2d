@@ -1,0 +1,15 @@
+D:\ClassLibs\OrionFramework\OrionFramework\bin\Debug\net6.0\OrionFramework.deps.json
+D:\ClassLibs\OrionFramework\OrionFramework\bin\Debug\net6.0\OrionFramework.dll
+D:\ClassLibs\OrionFramework\OrionFramework\bin\Debug\net6.0\OrionFramework.pdb
+D:\ClassLibs\OrionFramework\OrionFramework\bin\Debug\net6.0\FirstLight.dll
+D:\ClassLibs\OrionFramework\OrionFramework\bin\Debug\net6.0\FirstLight.pdb
+D:\ClassLibs\OrionFramework\OrionFramework\obj\Debug\net6.0\OrionFramework.csproj.AssemblyReference.cache
+D:\ClassLibs\OrionFramework\OrionFramework\obj\Debug\net6.0\OrionFramework.GeneratedMSBuildEditorConfig.editorconfig
+D:\ClassLibs\OrionFramework\OrionFramework\obj\Debug\net6.0\OrionFramework.AssemblyInfoInputs.cache
+D:\ClassLibs\OrionFramework\OrionFramework\obj\Debug\net6.0\OrionFramework.AssemblyInfo.cs
+D:\ClassLibs\OrionFramework\OrionFramework\obj\Debug\net6.0\OrionFramework.csproj.CoreCompileInputs.cache
+D:\ClassLibs\OrionFramework\OrionFramework\obj\Debug\net6.0\OrionFramework.csproj.CopyComplete
+D:\ClassLibs\OrionFramework\OrionFramework\obj\Debug\net6.0\OrionFramework.dll
+D:\ClassLibs\OrionFramework\OrionFramework\obj\Debug\net6.0\refint\OrionFramework.dll
+D:\ClassLibs\OrionFramework\OrionFramework\obj\Debug\net6.0\OrionFramework.pdb
+D:\ClassLibs\OrionFramework\OrionFramework\obj\Debug\net6.0\ref\OrionFramework.dll
