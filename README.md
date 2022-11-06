@@ -10,8 +10,12 @@ This framework can also be combined with my ECS for a different approach in crea
 * Camera
 * Animation
 * Scene Manager
-* Entity
+* Entity system
 * Level parser(FirstLight)
 * Scripts
+* Collisions
+* Particle System
+* Expandable User Interface
+* More physics coming soon
 
 --Work in progress
