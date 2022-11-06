@@ -21,7 +21,7 @@ The project already has a reference to the framework so you need to keep all sol
 * Scripts
 * Collisions
 * Particle System
-* Expandable User Interface
+* Extensible User Interface
 * More physics coming soon
 
 --Work in progress
