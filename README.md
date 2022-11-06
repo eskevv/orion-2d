@@ -1,0 +1,17 @@
+# OrionFramework
+Cross-platform Game Framework using XNA and C#
+
+Experimental and working game framework built on top of MonoGame primarily for 2D games.
+3D support is already implemented but has not been extended yet for making games with it - soon to be added.
+
+This framework can also be combined with my ECS for a different approach in creating entities.
+
+## Features ##
+* Camera
+* Animation
+* Scene Manager
+* Entity
+* Level parser(FirstLight)
+* Scripts
+
+--Work in progress
