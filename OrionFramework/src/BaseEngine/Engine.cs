@@ -1,20 +1,18 @@
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Graphics;
 using System;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using OrionFramework.Scene;
 
-namespace OrionFramework;
+namespace OrionFramework.BaseEngine;
 
 public abstract class Engine : Game
 {
     private readonly GraphicsDeviceManager _graphicsManager;
-
     private SpriteBatch SpriteBatch { get; set; } = null!;
-
     private ShapeBatch ShapeBatch { get; set; } = null!;
-
     protected Color ScreenClear { get; set; }
-
+    
     protected Engine()
     {
         _graphicsManager = new GraphicsDeviceManager(this);

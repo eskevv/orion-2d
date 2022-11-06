@@ -51,3 +51,4 @@ D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\tileset.xnb
 D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\gameFont.xnb
 D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\hero.xnb
 D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\npc.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\GUI.xnb

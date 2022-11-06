@@ -48,7 +48,7 @@ public static class Batcher
         if (_addedTexture)
             FlushTextures();
 
-        Color fillColor = color ?? _defaultColor;
+        var fillColor = color ?? _defaultColor;
         _shapeBatcher.DrawFillRect(position.X, position.Y, width, height, fillColor);
         _addedShape = true;
     }
@@ -58,7 +58,7 @@ public static class Batcher
         if (_addedTexture)
             FlushTextures();
 
-        Color fillColor = color ?? _defaultColor;
+        var fillColor = color ?? _defaultColor;
         _shapeBatcher.DrawFillRect(rect.X, rect.Y, rect.Width, rect.Height, fillColor);
         _addedShape = true;
     }
@@ -68,7 +68,7 @@ public static class Batcher
         if (_addedTexture)
             FlushTextures();
 
-        Color fillColor = color ?? _defaultColor;
+        var fillColor = color ?? _defaultColor;
         _shapeBatcher.DrawRect(position.X, position.Y, width, height, fillColor, thickness, rotation);
         _addedShape = true;
     }
@@ -78,7 +78,7 @@ public static class Batcher
         if (_addedTexture)
             FlushTextures();
 
-        Color fillColor = color ?? _defaultColor;
+        var fillColor = color ?? _defaultColor;
         _shapeBatcher.DrawRect(rect.X, rect.Y, rect.Width, rect.Height, fillColor, thickness, rotation);
         _addedShape = true;
     }
@@ -88,7 +88,7 @@ public static class Batcher
         if (_addedTexture)
             FlushTextures();
 
-        Color fillColor = color ?? _defaultColor;
+        var fillColor = color ?? _defaultColor;
         _shapeBatcher.DrawLine(x1, y1, x2, y2, fillColor, thickness);
         _addedShape = true;
     }
@@ -98,7 +98,7 @@ public static class Batcher
         if (_addedTexture)
             FlushTextures();
 
-        Color fillColor = color ?? _defaultColor;
+        var fillColor = color ?? _defaultColor;
         _shapeBatcher.DrawCircle(x, y, radius, fillColor, thickness);
         _addedShape = true;
     }
@@ -109,8 +109,8 @@ public static class Batcher
         if (_addedShape)
             FlushShapes();
 
-        Color drawColor = color ?? Color.White;
-        Vector2 drawOrigin = origin ?? Vector2.Zero;
+        var drawColor = color ?? Color.White;
+        var drawOrigin = origin ?? Vector2.Zero;
         _spriteBatcher.Draw(texture, position, sourceRect, drawColor, rotation, drawOrigin, scale, effect, 0f);
         _addedTexture = true;
     }
@@ -121,7 +121,7 @@ public static class Batcher
         if (_addedShape)
             FlushShapes();
 
-        Vector2 drawOrigin = origin ?? Vector2.Zero;
+        var drawOrigin = origin ?? Vector2.Zero;
         _spriteBatcher.DrawString(font, text, position, color, rotation, drawOrigin, scale, effect, 0f);
         _addedTexture = true;
     }

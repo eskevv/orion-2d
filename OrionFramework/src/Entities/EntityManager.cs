@@ -15,7 +15,7 @@ public class EntityManager
 
     public void Add(Entity entity, string? tag = null)
     {
-        entity.ID = _entities.Count;
+        entity.Id = _entities.Count;
         entity.Tag = tag;
         _entities.Add(entity);
     }
