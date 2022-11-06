@@ -6,7 +6,8 @@ Experimental and working game framework built on top of MonoGame primarily for 2
 
 This framework can also be combined with my ECS for a different approach in creating entities.
 
-**NOTE: To test and run the included working solution - you need to run the application from the ./Tester directory**
+**NOTE: To test and run the included working solution - you need to run the application from the ./Tester directory.
+The project already has a reference to the framework so you need to keep all solution paths the same to use the included assets.**
 
 ## Features ##
 * Camera
