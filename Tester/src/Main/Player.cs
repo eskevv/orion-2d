@@ -1,59 +1,70 @@
-using System.Collections.Generic;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using OrionFramework.Entities;
-using OrionFramework.Scene;
-using OrionFramework.UserInterface;
+using OrionFramework.DataStorage;
 
 namespace Tester.Main;
 
-public class Player : Entity
+public class Player : AnimatedSprite
 {
-    private IEnumerator<string> _outcomes;
+    private const float Speed = 0.6f;
 
-    public Player(Vector2 position) : base(position)
+    private EntityState _state = EntityState.Idle;
+
+    private EntityWeapon _weapon;
+
+    public Player(string name, Vector2 position, string? tag = null) : base(name, position, tag)
     {
-        _outcomes = GetDialogLine().GetEnumerator();
+        _weapon = new EntityWeapon(this);
+        
+        var idleAnimation = DataBank.GetData<AnimationData>("knight_idle");
+        var runAnimation = DataBank.GetData<AnimationData>("knight_run");
+        Animator.AddAnimation("idle".GetHashCode(), new Animation(idleAnimation.Texture, idleAnimation.Frames));
+        Animator.AddAnimation("run".GetHashCode(), new Animation(runAnimation.Texture, runAnimation.Frames));
     }
 
     public override void Update()
     {
-        Velocity = Input.RawAxes * 1.2f;
-        Position += Velocity;
+        _weapon.Update();
+            
+        switch (_state)
+        {
+            case EntityState.Idle:
+                Idle();
+                break;
+            case EntityState.Running:
+                Running();
+                break;
+        }
 
-        Camera.Position += (Position - Camera.Position) * 0.1f;
+        base.Update();
+        
 
-        if (Input.Pressed(Keys.V))
-            SceneManager.AddEntityToScene(new Npc(Position));
-
-        var dialogWindow = SceneManager.UiManager.GetWindow("dialog");
-        var dialog = dialogWindow.GetUiElement<DialogBox>("dialogElement");
-
-        if (Input.Pressed(Keys.R))
-            _outcomes = GetDialogLine().GetEnumerator();
-
-        if (Input.Pressed(Keys.X))
-            dialog.PushText(_outcomes);
+        Camera.Position += (Position - Camera.Position) * 0.6f;
     }
 
-    private IEnumerable<string> GetDialogLine()
+    private void Idle()
     {
-        yield return "Remove all newline characters from the string.";
-        yield return "Remove newlines from the start and end of the string.";
-        yield return "Remove newlines from just the start of the string.";
-        yield return "And remove newlines from only the end of the string.";
-        yield return "Remove all newline characters from the string.";
-        yield return "Remove newlines from the start and end of the string.";
-        yield return "Remove newlines from just the start of the string.";
-        yield return "And remove newlines from only the end of the string.";
+        CurrentAnimation = "idle";
+
+        Velocity = Input.RawAxes * Speed;
+
+        if (Velocity != Vector2.Zero)
+            _state = EntityState.Running;
+    }
+
+    private void Running()
+    {
+        CurrentAnimation = "run";
+
+        Velocity = Input.RawAxes * Speed;
+
+        if (Velocity == Vector2.Zero)
+            _state = EntityState.Idle;
     }
 
     public override void Draw()
     {
-        var t = AssetManager.LoadAsset<Texture2D>("npc");
-        var s = new Rectangle(0, 0, 16, 16);
-        var o = new Vector2(s.Width / 2, s.Height / 2);
-        Batcher.DrawTexture(t, Position, s, origin: o);
+        base.Draw();
+        
+        _weapon.Draw();
     }
 }

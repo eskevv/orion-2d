@@ -7,8 +7,8 @@ namespace OrionFramework.Scene;
 
 public static class SceneManager
 {
-    private static List<Scene> _scenes = new();
-    private static Scene? _currentScene;
+    private static List<GameScene> _scenes = new();
+    private static GameScene? _currentScene;
 
     public static UiManager UiManager => _currentScene!.UiManager;
     public static EntityManager EntityManager => _currentScene!.EntityManager;
@@ -26,11 +26,11 @@ public static class SceneManager
         selectedScene?.EntityManager.Add(entity);
     }
 
-    public static void AddScene(Scene scene, ISceneInitializer initializer)
+    public static void AddScene(GameScene gameScene, ISceneInitializer? initializer = null)
     {
-        _currentScene ??= scene;
-        _scenes.Add(scene);
-        scene.Load(initializer);
+        _currentScene ??= gameScene;
+        _scenes.Add(gameScene);
+        gameScene.Load(initializer);
     }
 
     public static void SwitchToScene(string sceneName)

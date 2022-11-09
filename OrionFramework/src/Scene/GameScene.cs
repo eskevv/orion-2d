@@ -1,29 +1,26 @@
-using System;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
-using OrionFramework.Entities;
+using OrionFramework.Drawing;
 using OrionFramework.UserInterface;
 
 namespace OrionFramework.Scene;
 
-
-
-public class Scene
+public class GameScene
 {
-    public string Name { get; }
+    public string? Name { get; }
     public EntityManager EntityManager { get; } = new();
     public MapManager MapManager { get; } = new();
     public UiManager UiManager { get; } = new();
 
-    public Scene(string name)
+    public GameScene(string? name = null)
     {
         Name = name;
     }
 
-    public void Load(ISceneInitializer initializer)
+    public void Load(ISceneInitializer? initializer)
     {
+        if (Name is null) return;
         MapManager.Load(Name);
-        initializer.Initialize(MapManager, EntityManager);
+
+        initializer?.Initialize(this);
     }
 
     public void Update()

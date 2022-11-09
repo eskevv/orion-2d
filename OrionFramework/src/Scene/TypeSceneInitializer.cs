@@ -14,10 +14,10 @@ public class TypeSceneInitializer : ISceneInitializer
         _entityTypes = entityTypes;
     }
 
-    public void Initialize(MapManager mapManager, EntityManager entityManager)
+    public void Initialize(GameScene gameScene)
     {
         foreach (var item in _entityTypes)
-            AddEntitiesOfType(mapManager, entityManager, item);
+            AddEntitiesOfType(gameScene.MapManager, gameScene.EntityManager, item);
     }
 
     private void AddEntitiesOfType(MapManager mapManager, EntityManager entityManager, KeyValuePair<string, Type> item)

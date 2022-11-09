@@ -1,6 +1,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using System;
+using OrionFramework.Drawing;
 
 namespace OrionFramework;
 
@@ -26,7 +27,7 @@ public class Button
 
     public Button(string textureName, SpriteFont spriteFont, int xPos, int yPos, float scale = 1f, Rectangle? srcRect = null)
     {
-        _texture = AssetManager.GetAsset<Texture2D>(textureName);
+        _texture = AssetManager.LoadAsset<Texture2D>(textureName);
         _spriteFont = spriteFont;
         _position = new Vector2(xPos, yPos);
         _scale = scale;

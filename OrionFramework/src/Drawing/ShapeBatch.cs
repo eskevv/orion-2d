@@ -66,7 +66,7 @@ public class ShapeBatch : IDisposable
             return;
 
         _effect.CurrentTechnique.Passes[0].Apply();
-        _device.DrawUserIndexedPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, _vertices, 0, _vertexCount, 
+        _device.DrawUserIndexedPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, _vertices, 0, _vertexCount,
             _indeces, 0, _shapeCount);
 
         _indexCount = 0;
@@ -180,6 +180,7 @@ public class ShapeBatch : IDisposable
         AllocateVertices(vertexPositions, color);
     }
 
+
     /// <summary>Draw a primitive filled circle using 50 vertices.</summary>
     public void DrawFillCircle(int x, int y, float radius, Color color, float rotation = 0f)
     {
@@ -233,6 +234,59 @@ public class ShapeBatch : IDisposable
             Vector3 pointTwo = i == positions.Length - 1 ? positions[0] : positions[i + 1];
             DrawLine((int)pointOne.X, (int)pointOne.Y, (int)pointTwo.X, (int)pointTwo.Y, color, thickness);
         }
+    }
+
+    public void DrawPolygon(int x, int y, int sides, float radius, Color color, int thickness = 1, float rotation = 0f)
+    {
+        EnsureStarted();
+
+        float cos = MathF.Cos(MathHelper.TwoPi / sides);
+        float sin = MathF.Sin(MathHelper.TwoPi / sides);
+        float currentX = MathF.Cos(rotation) * radius;
+        float currentY = MathF.Sin(rotation) * radius;
+
+        Vector3[] positions = new Vector3[sides];
+        for (int z = 0; z < positions.Length; z++)
+        {
+            float xx = cos * currentX - sin * currentY;
+            float yy = sin * currentX + cos * currentY;
+
+            positions[z] = new Vector3(xx + x, yy + y, 0f);
+            currentX = xx;
+            currentY = yy;
+        }
+
+        for (int i = 0; i < positions.Length; i++)
+        {
+            Vector3 pointOne = positions[i];
+            Vector3 pointTwo = i == positions.Length - 1 ? positions[0] : positions[i + 1];
+            DrawLine((int)pointOne.X, (int)pointOne.Y, (int)pointTwo.X, (int)pointTwo.Y, color, thickness);
+        }
+    }
+
+    public void DrawFillPolygon(int x, int y, int sides, float radius, Color color, float rotation = 0f)
+    {
+        EnsureStarted();
+        EnsureSpace(vertexCount: sides, indexCount: sides * 3 - 6);
+
+        float cos = MathF.Cos(MathHelper.TwoPi / sides);
+        float sin = MathF.Sin(MathHelper.TwoPi / sides);
+        float currentX = MathF.Cos(rotation) * radius;
+        float currentY = MathF.Sin(rotation) * radius;
+
+        Vector3[] positions = new Vector3[sides];
+        for (int z = 0; z < positions.Length; z++)
+        {
+            float xx = cos * currentX - sin * currentY;
+            float yy = sin * currentX + cos * currentY;
+
+            positions[z] = new Vector3(xx + x, yy + y, 0f);
+            currentX = xx;
+            currentY = yy;
+        }
+
+        AllocateIndeces(faces: sides - 2);
+        AllocateVertices(positions, color);
     }
 
     /// <summary>Draw a primitive rectangle with an optional thickness.</summary>

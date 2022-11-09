@@ -1,8 +1,7 @@
-using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace OrionFramework;
+namespace OrionFramework.Drawing;
 
 public static class Batcher
 {
@@ -100,6 +99,36 @@ public static class Batcher
 
         var fillColor = color ?? _defaultColor;
         _shapeBatcher.DrawCircle(x, y, radius, fillColor, thickness);
+        _addedShape = true;
+    }
+    
+    public static void DrawFillCircle(int x, int y, float radius, Color? color = null)
+    {
+        if (_addedTexture)
+            FlushTextures();
+
+        var fillColor = color ?? _defaultColor;
+        _shapeBatcher.DrawFillCircle(x, y, radius, fillColor);
+        _addedShape = true;
+    }
+    
+    public static void DrawPolygon(int x, int y, int sides, float radius, Color? color = null, int thickness = 1)
+    {
+        if (_addedTexture)
+            FlushTextures();
+
+        var fillColor = color ?? _defaultColor;
+        _shapeBatcher.DrawPolygon(x, y, sides, radius, fillColor, thickness);
+        _addedShape = true;
+    }
+    
+    public static void DrawFillPolygon(int x, int y, int sides, float radius, Color? color = null)
+    {
+        if (_addedTexture)
+            FlushTextures();
+
+        var fillColor = color ?? _defaultColor;
+        _shapeBatcher.DrawFillPolygon(x, y, sides, radius, fillColor);
         _addedShape = true;
     }
 

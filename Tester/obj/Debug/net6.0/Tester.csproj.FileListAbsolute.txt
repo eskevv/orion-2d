@@ -52,3 +52,41 @@ D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\gameFont.xnb
 D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\hero.xnb
 D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\npc.xnb
 D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\GUI.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\ImGui.NET.dll
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\runtimes\linux-x64\native\libcimgui.so
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\runtimes\osx\native\libcimgui.dylib
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\runtimes\win-x64\native\cimgui.dll
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\runtimes\win-x86\native\cimgui.dll
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\gentle 32x32 v01.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\gentle 32x32 v02.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\gentle 32x32 v03.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\gentle forest v01.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\gentle forest v02.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\gentle forest v03.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\gentle trees 80x96 v01.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\gentle trees 80x96 v02.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\gentle trees 80x96 v03.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\gentle water sparkles A v01.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\gentle water sparkles A v02.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\gentle water sparkles A v03.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\gentle waterfall A v01.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\gentle waterfall A v02.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\gentle waterfall A v03.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\assets\gentle 32x32 v01.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\assets\gentle 32x32 v02.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\assets\gentle 32x32 v03.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\assets\gentle forest v01.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\assets\gentle forest v02.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\assets\gentle forest v03.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\assets\gentle trees 80x96 v01.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\assets\gentle trees 80x96 v02.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\assets\gentle trees 80x96 v03.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\assets\gentle water sparkles A v01.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\assets\gentle water sparkles A v02.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\assets\gentle water sparkles A v03.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\assets\gentle waterfall A v01.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\assets\gentle waterfall A v02.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\assets\gentle waterfall A v03.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\knight_idle.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\knight_run.xnb
+D:\ClassLibs\OrionFramework\Tester\bin\Debug\net6.0\Content\sword_1.xnb

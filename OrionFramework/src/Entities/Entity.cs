@@ -5,17 +5,19 @@ namespace OrionFramework.Entities;
 
 public abstract class Entity
 {
-    public int Id { get; set; }
+    public string Name;
+    public int Id;
     public string? Tag { get; set; }
     public Vector2 Position { get; set; }
     public Vector2 Velocity { get; set; }
     public bool Active { get; set; } = true;
     public Texture2D? Texture { get; set; }
 
-    protected Entity(Vector2 position, string? tag = null)
+    protected Entity(string name, Vector2 position, string? tag = null)
     {
         Position = position;
         Tag = tag;
+        Name = name;
     }
 
     public abstract void Update();

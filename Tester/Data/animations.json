@@ -68,5 +68,31 @@
       90,
       90
     ]
+  },
+  "knight_idle": {
+    "textureName": "knight_idle",
+    "ox": 9,
+    "oy": 8,
+    "frames": [
+      100,
+      140,
+      90,
+      110,
+      90,
+      90
+    ]
+  },
+  "knight_run": {
+    "textureName": "knight_run",
+    "ox": 9,
+    "oy": 8,
+    "frames": [
+      100,
+      140,
+      90,
+      110,
+      90,
+      90
+    ]
   }
 }

@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
-using OrionFramework.UserInterface;
+using OrionFramework.Drawing;
 
-namespace Tester.Main;
+namespace OrionFramework.UserInterface;
 
 public class DialogBox : UiElement
 {

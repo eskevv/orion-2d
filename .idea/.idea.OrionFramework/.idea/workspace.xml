@@ -4,48 +4,142 @@
     <projectFile>Tester/Tester.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="885c1880-ec38-4c33-b268-41d46b281926" name="Changes" comment="scene manager added">
-      <change afterPath="$PROJECT_DIR$/OrionFramework/src/Scene/ISceneInitializer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrionFramework/src/Scene/TypeSceneInitializer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrionFramework/src/UserInterface/UiElement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrionFramework/src/UserInterface/UiWindow.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tester/Content/GUI.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tester/src/Main/DialogBox.cs" afterDir="false" />
+    <list default="true" id="885c1880-ec38-4c33-b268-41d46b281926" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/OrionFramework/src/Editor/SceneEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrionFramework/src/Editor/Square.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrionFramework/src/Editor/SquareDatabase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrionFramework/src/Entities/DefaultEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrionFramework/src/ImGuiWrapper/DrawVertexDeclaration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrionFramework/src/ImGuiWrapper/ImGuiRenderer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/_gentle.tmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle 32x32 v01.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle 32x32 v02.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle 32x32 v03.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle 32x32 v04.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle 32x32 v05.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle 32x32 v06.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle 32x32 v07.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle 32x32 v08.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle 32x32 v09.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle 32x32 v10.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle forest v01.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle forest v02.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle forest v03.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle forest v04.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle forest v05.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle forest v06.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle forest v07.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle forest v08.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle forest v09.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle forest v10.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle trees 80x96 v01.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle trees 80x96 v02.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle trees 80x96 v03.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle trees 80x96 v04.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle trees 80x96 v05.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle trees 80x96 v06.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle trees 80x96 v07.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle trees 80x96 v08.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle trees 80x96 v09.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle trees 80x96 v10.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle water sparkles A v01.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle water sparkles A v02.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle water sparkles A v03.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle water sparkles A v04.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle water sparkles A v05.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle water sparkles A v06.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle water sparkles A v07.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle water sparkles A v08.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle water sparkles A v09.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle water sparkles A v10.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle waterfall A v01.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle waterfall A v02.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle waterfall A v03.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle waterfall A v04.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle waterfall A v05.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle waterfall A v06.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle waterfall A v07.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle waterfall A v08.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle waterfall A v09.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/Content/gentle waterfall A v10.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/src/Main/AnimatedSprite.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/src/Main/EntityState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tester/src/Main/PlayerWeapon.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OrionFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OrionFramework/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/OrionFramework.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/OrionFramework.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/FirstLight.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/FirstLight.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/FirstLight.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/FirstLight.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/OrionFramework.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/OrionFramework.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/OrionFramework.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/OrionFramework.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/OrionFramework.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/OrionFramework.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/ref/OrionFramework.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/ref/OrionFramework.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/refint/OrionFramework.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/refint/OrionFramework.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/OrionFramework.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/OrionFramework.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Animation/Animation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Animation/Animation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrionFramework/src/BaseEngine/Engine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/BaseEngine/Engine.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrionFramework/src/Drawing/Batcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Drawing/Batcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Drawing/ShapeBatch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Drawing/ShapeBatch.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrionFramework/src/Entities/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Entities/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Entities/EntityManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Entities/EntityManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Scene/Scene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Scene/Scene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/MapGeneration/MapTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/MapGeneration/MapTile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Particles/Particle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Particles/Particle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Scene/ISceneInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Scene/ISceneInitializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Scene/Scene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Scene/GameScene.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrionFramework/src/Scene/SceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Scene/SceneManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrionFramework/src/UserInterface/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/UserInterface/UiManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Scene/TypeSceneInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Scene/TypeSceneInitializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/UserInterface/Button/Button.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/UserInterface/Button/Button.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/UserInterface/CellGrid/CellGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/UserInterface/CellGrid/CellGrid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/UserInterface/UiElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/UserInterface/UiElement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tester/Content/Content.mgcb" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/Content.mgcb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/gameFont.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/gameFont.xnb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/gameFont.spritefont" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/gameFont.spritefont" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/Grass.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/Grass.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/grass-tile-2.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/grass-tile-2.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/grass-tile-3.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/grass-tile-3.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/grass-tile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/grass-tile.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/.mgcontent" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/.mgstats" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/.mgstats" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/gameFont.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/gameFont.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/gameFont.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/gameFont.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/tileset.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/tileset.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Data/animations.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Data/animations.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Tester.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Tester.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/app.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/app.manifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/FirstLight.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/FirstLight.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/FirstLight.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/FirstLight.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/OrionFramework.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/OrionFramework.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/OrionFramework.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/OrionFramework.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Tester.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Tester.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Tester.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Tester.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Tester.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Tester.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Tester.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Tester.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/ref/Tester.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/ref/Tester.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/refint/Tester.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/refint/Tester.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/src/Main/Game1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/src/Main/Game1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Tester.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/Tester.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Tester.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/Tester.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/src/Main/DialogBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/UserInterface/DialogBox.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/src/Main/Game1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/src/Main/EngineRuntime.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/src/Main/NPC.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tester/src/Main/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/src/Main/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/src/Main/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/src/Main/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +147,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b310675293024f2ba15241a2c87f4a1d37e00/7a/cf4a1357/ImGui.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b310675293024f2ba15241a2c87f4a1d37e00/99/2a8a55af/ImGuiNative.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/OrionFramework/src/DataStorage/DataBank.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/OrionFramework/src/Entities/Entity.cs" root0="FORCE_HIGHLIGHTING" />
@@ -71,16 +167,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CSharpParameterNameHintsOptions",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Tester" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -118,7 +214,13 @@
       <workItem from="1667590169727" duration="52000" />
       <workItem from="1667590231896" duration="28065000" />
       <workItem from="1667664155645" duration="41470000" />
-      <workItem from="1667749814894" duration="22104000" />
+      <workItem from="1667749814894" duration="22947000" />
+      <workItem from="1667838449472" duration="5776000" />
+      <workItem from="1667849011372" duration="7992000" />
+      <workItem from="1667857648801" duration="3593000" />
+      <workItem from="1667928078931" duration="13153000" />
+      <workItem from="1667946283504" duration="1459000" />
+      <workItem from="1668013444918" duration="10643000" />
     </task>
     <task id="LOCAL-00001" summary="added and tested scene manager with app">
       <created>1667692963182</created>
@@ -134,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667693013999</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="dialog box prototype">
+      <created>1667773622146</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667773622146</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +266,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="added and tested scene manager with app" />
     <MESSAGE value="scene manager added" />
-    <option name="LAST_COMMIT_MESSAGE" value="scene manager added" />
+    <MESSAGE value="dialog box prototype" />
+    <option name="LAST_COMMIT_MESSAGE" value="dialog box prototype" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
