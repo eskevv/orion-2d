@@ -18,10 +18,11 @@ The project already has a reference to the framework so you need to keep all sol
 * Scene Manager
 * Entity system
 * Level parser(FirstLight)
-* Scripts
 * Collisions
 * Particle System
-* Extensible User Interface
-* More physics coming soon
 
 --Work in progress
+* Scripts
+* UI
+* More physics
+
