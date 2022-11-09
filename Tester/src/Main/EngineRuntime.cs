@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework;
 using OrionFramework.BaseEngine;
 using OrionFramework.DataStorage;
+using OrionFramework.Drawing;
 using OrionFramework.Scene;
 
 // TODO: scene entity initializer interfaces, scene scripts(on load, on update)
@@ -29,7 +30,7 @@ public class EngineRuntime : Engine
         Screen.PreferredBackBufferHeight = 900;
         Screen.ApplyChanges();
 
-        Camera.Zoom = 2f;
+        Camera.Zoom = 1f;
         Camera.SetLimits(0, Screen.Width, 0, Screen.Height * 4);
         Camera.Position = Vector2.Zero;
 
@@ -52,6 +53,12 @@ public class EngineRuntime : Engine
     {
         base.Draw(gameTime);
 
-        SceneManager.Draw();
+        // SceneManager.Draw();
+        
+        Batcher.Begin();
+        
+        Batcher.DrawCircle(500, 500, 100f, Color.Orange, 2, MathHelper.ToRadians(90));
+        
+        Batcher.Present();;
     }
 }

@@ -43,6 +43,6 @@ public class EntityWeapon
         Batcher.DrawLine((int)Position.X, (int)Position.Y, (int)Input.WorldCursor.X, (int)Input.WorldCursor.Y);
         // Batcher.DrawTexture(_texture, Position, origin: _origin, effect: _xFlipped, rotation: _rotation, scale: _scale);
 
-        Batcher.DrawFillCircle((int)(Position.X + _origin.X), (int)(Position.Y + _origin.Y), 8f, Color.Red);
+        Batcher.DrawCircle((int)(Position.X + _origin.X), (int)(Position.Y + _origin.Y), 40f, Color.Aqua, 1, MathHelper.ToRadians(80f));
     }
 }
