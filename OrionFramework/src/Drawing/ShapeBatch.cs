@@ -181,18 +181,18 @@ public class ShapeBatch : IDisposable
     }
 
 
-    /// <summary>Draw a primitive filled circle using 50 vertices.</summary>
-    public void DrawFillCircle(int x, int y, float radius, Color color, float rotation = 0f)
+    /// <summary>Draw a primitive filled circle using 80 vertices.</summary>
+    public void DrawFillCircle(int x, int y, float radius, Color color)
     {
         EnsureStarted();
-        EnsureSpace(vertexCount: 50, indexCount: 144); // indeces = vertices * 3 - 6
+        EnsureSpace(vertexCount: 80, indexCount: 234); // indeces = vertices * 3 - 6
 
-        float cos = MathF.Cos(MathHelper.TwoPi / 50);
-        float sin = MathF.Sin(MathHelper.TwoPi / 50);
-        float currentX = MathF.Cos(rotation) * radius;
-        float currentY = MathF.Sin(rotation) * radius;
+        float cos = MathF.Cos(MathHelper.TwoPi / 80);
+        float sin = MathF.Sin(MathHelper.TwoPi / 80);
+        float currentX = MathF.Cos(0f) * radius;
+        float currentY = MathF.Sin(0f) * radius;
 
-        Vector3[] positions = new Vector3[50];
+        Vector3[] positions = new Vector3[80];
         for (int z = 0; z < positions.Length; z++)
         {
             float xx = cos * currentX - sin * currentY;
@@ -203,21 +203,21 @@ public class ShapeBatch : IDisposable
             currentY = yy;
         }
 
-        AllocateIndeces(faces: 50 - 2);
+        AllocateIndeces(faces: 78); // vertices - 2
         AllocateVertices(positions, color);
     }
 
-    /// <summary>Draw a primitive circle using 50 vertices.</summary>
+    /// <summary>Draw a primitive circle using 50 vertices. Giving it a rotation(radians) will draw a line from the center.</summary>
     public void DrawCircle(int x, int y, float radius, Color color, int thickness = 1, float rotation = 0f)
     {
         EnsureStarted();
 
-        float cos = MathF.Cos(MathHelper.TwoPi / 50);
-        float sin = MathF.Sin(MathHelper.TwoPi / 50);
+        float cos = MathF.Cos(MathHelper.TwoPi / 80);
+        float sin = MathF.Sin(MathHelper.TwoPi / 80);
         float currentX = MathF.Cos(rotation) * radius;
         float currentY = MathF.Sin(rotation) * radius;
 
-        Vector3[] positions = new Vector3[50];
+        Vector3[] positions = new Vector3[80];
         for (int z = 0; z < positions.Length; z++)
         {
             float xx = cos * currentX - sin * currentY;
@@ -234,6 +234,9 @@ public class ShapeBatch : IDisposable
             Vector3 pointTwo = i == positions.Length - 1 ? positions[0] : positions[i + 1];
             DrawLine((int)pointOne.X, (int)pointOne.Y, (int)pointTwo.X, (int)pointTwo.Y, color, thickness);
         }
+
+        if (rotation != 0f)
+            DrawLine(x, y, (int)positions[^1].X, (int)positions[^1].Y, color, thickness);
     }
 
     public void DrawPolygon(int x, int y, int sides, float radius, Color color, int thickness = 1, float rotation = 0f)
@@ -262,6 +265,9 @@ public class ShapeBatch : IDisposable
             Vector3 pointTwo = i == positions.Length - 1 ? positions[0] : positions[i + 1];
             DrawLine((int)pointOne.X, (int)pointOne.Y, (int)pointTwo.X, (int)pointTwo.Y, color, thickness);
         }
+        
+        if (rotation != 0f)
+            DrawLine(x, y, (int)positions[^1].X, (int)positions[^1].Y, color, thickness);
     }
 
     public void DrawFillPolygon(int x, int y, int sides, float radius, Color color, float rotation = 0f)

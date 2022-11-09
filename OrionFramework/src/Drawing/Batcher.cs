@@ -92,16 +92,16 @@ public static class Batcher
         _addedShape = true;
     }
 
-    public static void DrawCircle(int x, int y, float radius, Color? color = null, int thickness = 1)
+    public static void DrawCircle(int x, int y, float radius, Color? color = null, int thickness = 1, float rotation = 0f)
     {
         if (_addedTexture)
             FlushTextures();
 
         var fillColor = color ?? _defaultColor;
-        _shapeBatcher.DrawCircle(x, y, radius, fillColor, thickness);
+        _shapeBatcher.DrawCircle(x, y, radius, fillColor, thickness, rotation);
         _addedShape = true;
     }
-    
+
     public static void DrawFillCircle(int x, int y, float radius, Color? color = null)
     {
         if (_addedTexture)
@@ -111,8 +111,8 @@ public static class Batcher
         _shapeBatcher.DrawFillCircle(x, y, radius, fillColor);
         _addedShape = true;
     }
-    
-    public static void DrawPolygon(int x, int y, int sides, float radius, Color? color = null, int thickness = 1)
+
+    public static void DrawPolygon(int x, int y, int sides, float radius, Color? color = null, int thickness = 1, float rotation = 0f)
     {
         if (_addedTexture)
             FlushTextures();
@@ -121,14 +121,14 @@ public static class Batcher
         _shapeBatcher.DrawPolygon(x, y, sides, radius, fillColor, thickness);
         _addedShape = true;
     }
-    
-    public static void DrawFillPolygon(int x, int y, int sides, float radius, Color? color = null)
+
+    public static void DrawFillPolygon(int x, int y, int sides, float radius, Color? color = null, float rotation = 0f)
     {
         if (_addedTexture)
             FlushTextures();
 
         var fillColor = color ?? _defaultColor;
-        _shapeBatcher.DrawFillPolygon(x, y, sides, radius, fillColor);
+        _shapeBatcher.DrawFillPolygon(x, y, sides, radius, fillColor, rotation);
         _addedShape = true;
     }
 
