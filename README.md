@@ -16,7 +16,7 @@ The project already has a reference to the framework so you need to keep all sol
 * Camera
 * Animation
 * Scene Manager
-* Entity system
+* Entity class
 * Level parser(FirstLight)
 * Collisions
 * Particle System
@@ -25,4 +25,4 @@ The project already has a reference to the framework so you need to keep all sol
 * Scripts
 * UI
 * More physics
-
+* complete Entity system (with my entity library)
