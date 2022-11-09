@@ -4,49 +4,7 @@
     <projectFile>Tester/Tester.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="885c1880-ec38-4c33-b268-41d46b281926" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OrionFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OrionFramework/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/OrionFramework.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/OrionFramework.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/OrionFramework.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/OrionFramework.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/ref/OrionFramework.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/ref/OrionFramework.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/refint/OrionFramework.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/refint/OrionFramework.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Drawing/Batcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Drawing/Batcher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Drawing/ShapeBatch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Drawing/ShapeBatch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/.mgstats" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/.mgstats" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle 32x32 v01.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle 32x32 v01.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle 32x32 v02.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle 32x32 v02.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle 32x32 v03.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle 32x32 v03.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle forest v01.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle forest v01.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle forest v02.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle forest v02.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle forest v03.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle forest v03.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle trees 80x96 v01.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle trees 80x96 v01.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle trees 80x96 v02.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle trees 80x96 v02.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle trees 80x96 v03.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle trees 80x96 v03.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle water sparkles A v01.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle water sparkles A v01.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle water sparkles A v02.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle water sparkles A v02.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle water sparkles A v03.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle water sparkles A v03.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle waterfall A v01.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle waterfall A v01.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle waterfall A v02.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle waterfall A v02.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle waterfall A v03.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle waterfall A v03.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/knight_idle.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/knight_idle.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/knight_run.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/knight_run.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/sword_1.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/sword_1.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/OrionFramework.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/OrionFramework.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/OrionFramework.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/OrionFramework.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Tester.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Tester.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Tester.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Tester.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Tester.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Tester.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/ref/Tester.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/ref/Tester.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/refint/Tester.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/refint/Tester.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/src/Main/EngineRuntime.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/src/Main/EngineRuntime.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tester/src/Main/PlayerWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tester/src/Main/PlayerWeapon.cs" afterDir="false" />
-    </list>
+    <list default="true" id="885c1880-ec38-4c33-b268-41d46b281926" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,7 +84,7 @@
       <workItem from="1667857648801" duration="3593000" />
       <workItem from="1667928078931" duration="13153000" />
       <workItem from="1667946283504" duration="1459000" />
-      <workItem from="1668013444918" duration="13823000" />
+      <workItem from="1668013444918" duration="14264000" />
     </task>
     <task id="LOCAL-00001" summary="added and tested scene manager with app">
       <created>1667692963182</created>

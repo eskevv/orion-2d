@@ -207,7 +207,7 @@ public class ShapeBatch : IDisposable
         AllocateVertices(positions, color);
     }
 
-    /// <summary>Draw a primitive circle using 50 vertices. Giving it a rotation(radians) will draw a line from the center.</summary>
+    /// <summary>Draw a primitive circle using 80 vertices. Giving it a rotation(radians) will draw a line from the center.</summary>
     public void DrawCircle(int x, int y, float radius, Color color, int thickness = 1, float rotation = 0f)
     {
         EnsureStarted();
