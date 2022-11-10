@@ -1,4 +1,4 @@
-namespace OrionFramework;
+namespace OrionFramework.UserInterface.CellGrid;
 
 public class ScaledHover : HoverEffect
 {

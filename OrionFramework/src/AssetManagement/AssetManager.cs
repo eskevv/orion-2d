@@ -1,9 +1,10 @@
+using System.Collections.Generic;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Audio;
-using System.Collections.Generic;
+using OrionFramework.Helpers;
 
-namespace OrionFramework;
+namespace OrionFramework.AssetManagement;
 
 public static class AssetManager 
 {

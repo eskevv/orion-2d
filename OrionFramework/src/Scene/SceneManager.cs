@@ -1,6 +1,6 @@
-using System;
 using System.Collections.Generic;
 using OrionFramework.Entities;
+using OrionFramework.MapGeneration;
 using OrionFramework.UserInterface;
 
 namespace OrionFramework.Scene;

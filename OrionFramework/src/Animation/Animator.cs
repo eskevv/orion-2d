@@ -1,8 +1,8 @@
+using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using System.Collections.Generic;
 
-namespace OrionFramework;
+namespace OrionFramework.Animation;
 
 public class Animator
 {
@@ -30,6 +30,11 @@ public class Animator
 
     public void SwitchTexture(Texture2D texture)
     {
+    }
+
+    public void Restart()
+    {
+        _animations[_currentKey].CurrentFrame = 0;
     }
 
     public void Update(int key)

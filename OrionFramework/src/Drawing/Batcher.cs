@@ -82,13 +82,13 @@ public static class Batcher
         _addedShape = true;
     }
 
-    public static void DrawLine(int x1, int y1, int x2, int y2, Color? color = null, int thickness = 1)
+    public static void DrawLine(Vector2 point1, Vector2 point2, Color? color = null, int thickness = 1)
     {
         if (_addedTexture)
             FlushTextures();
 
         var fillColor = color ?? _defaultColor;
-        _shapeBatcher.DrawLine(x1, y1, x2, y2, fillColor, thickness);
+        _shapeBatcher.DrawLine((int)point1.X, (int)point1.Y, (int)point2.X, (int)point2.Y, fillColor, thickness);
         _addedShape = true;
     }
 
@@ -102,13 +102,13 @@ public static class Batcher
         _addedShape = true;
     }
 
-    public static void DrawFillCircle(int x, int y, float radius, Color? color = null)
+    public static void DrawFillCircle(float x, float y, float radius, Color? color = null)
     {
         if (_addedTexture)
             FlushTextures();
 
         var fillColor = color ?? _defaultColor;
-        _shapeBatcher.DrawFillCircle(x, y, radius, fillColor);
+        _shapeBatcher.DrawFillCircle((int)x, (int)y, radius, fillColor);
         _addedShape = true;
     }
 

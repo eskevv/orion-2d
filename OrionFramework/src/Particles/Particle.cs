@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using OrionFramework.Drawing;
 
-namespace OrionFramework;
+namespace OrionFramework.Particles;
 
 public class Particle
 {
@@ -44,7 +44,7 @@ public class Particle
 
     public void Update()
     {
-        _lifespanLeft -= Time.DeltaTime;
+        _lifespanLeft -= Time.Time.DeltaTime;
 
         if (_lifespanLeft <= 0f)
         {
@@ -58,7 +58,7 @@ public class Particle
         float opacity_lerp = MathHelper.Lerp(_data.OpacityEnd, _data.OpacityStart, _lifespanAmount);
         _opacity = MathHelper.Clamp(opacity_lerp, 0f, 1f);
         _scale = MathHelper.Lerp(_data.SizeEnd, _data.SizeStart, _lifespanAmount) / _data.Texture.Width;
-        _position += _direction * _data.Speed * Time.DeltaTime;
+        _position += _direction * _data.Speed * Time.Time.DeltaTime;
     }
 
     public void Draw()

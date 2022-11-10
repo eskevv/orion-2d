@@ -1,5 +1,6 @@
 using System;
-namespace OrionFramework;
+
+namespace OrionFramework.Time;
 
 /// <summary>
 /// internal class hiding the implementation of ITimer

@@ -1,4 +1,4 @@
-namespace OrionFramework.DataStorage;
+namespace OrionFramework.Animation;
 
 public struct FrameData
 {

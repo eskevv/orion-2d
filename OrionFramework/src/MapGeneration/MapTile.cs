@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using OrionFramework.Drawing;
 
-namespace OrionFramework;
+namespace OrionFramework.MapGeneration;
 
 public class MapTile
 {

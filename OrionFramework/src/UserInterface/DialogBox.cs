@@ -45,11 +45,11 @@ public class DialogBox : UiElement
 
     public override void Update()
     {
-        if (_paused && Input.Pressed(Keys.X))
+        if (_paused && Input.Input.Pressed(Keys.X))
             ClearProceed();
         else if (_paused || _pushedText is null) return;
 
-        _timer += Time.DeltaTime;
+        _timer += Time.Time.DeltaTime;
         CheckLineBreak();
         AddChar();
     }

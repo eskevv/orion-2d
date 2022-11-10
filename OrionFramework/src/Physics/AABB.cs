@@ -1,7 +1,7 @@
-using Microsoft.Xna.Framework;
 using System;
+using Microsoft.Xna.Framework;
 
-namespace OrionFramework;
+namespace OrionFramework.Physics;
 
 public struct AABB
 {

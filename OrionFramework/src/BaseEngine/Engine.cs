@@ -2,6 +2,7 @@ using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using OrionFramework.AssetManagement;
 using OrionFramework.Drawing;
 using OrionFramework.Scene;
 
@@ -31,7 +32,7 @@ public abstract class Engine : Game
         ShapeBatch = new ShapeBatch(GraphicsDevice);
 
         AssetManager.Initialize(Content);
-        Camera.Initialize(GraphicsDevice);
+        Camera.Camera.Initialize(GraphicsDevice);
         Batcher.Initialize(ShapeBatch, SpriteBatch);
         Screen.Initialize(_graphicsManager);
     }
@@ -40,10 +41,10 @@ public abstract class Engine : Game
     {
         base.Update(gameTime);
 
-        Input.Update();
-        Time.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
+        Input.Input.Update();
+        Time.Time.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
 
-        if (Input.Pressed(Keys.Escape))
+        if (Input.Input.Pressed(Keys.Escape))
             Exit();
     }
 

@@ -1,6 +1,7 @@
 using Microsoft.Xna.Framework;
+using OrionFramework.Helpers;
 
-namespace OrionFramework;
+namespace OrionFramework.Particles.Emitters;
 
 public class MouseEmitter : IEmitter
 {
@@ -11,13 +12,13 @@ public class MouseEmitter : IEmitter
 
     private Vector2 GetPosition()
     {
-        var cursor = Input.ScreenCursor;
+        var cursor = Input.Input.ScreenCursor;
 
         if (_varianceX == 0 && _varianceY == 0)
             return cursor;
 
-        float x = cursor.X + GameMath.RandomFloat(-_varianceX, _varianceX);
-        float y = cursor.Y + GameMath.RandomFloat(-_varianceY, _varianceY);
+        float x = cursor.X + OrionHelp.RandomFloat(-_varianceX, _varianceX);
+        float y = cursor.Y + OrionHelp.RandomFloat(-_varianceY, _varianceY);
         return new Vector2(x, y);
     }
 

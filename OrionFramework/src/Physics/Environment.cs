@@ -1,4 +1,4 @@
-namespace OrionFramework;
+namespace OrionFramework.Physics;
 
 public static class Environment
 {

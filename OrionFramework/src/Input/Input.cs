@@ -1,8 +1,8 @@
+using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
-using System;
 
-namespace OrionFramework;
+namespace OrionFramework.Input;
 
 public static class Input
 {
@@ -52,8 +52,8 @@ public static class Input
 
     private static Vector2 GetWorldCursor()
     {
-        var offset = new Vector3(ScreenCursor, 0f) - (Camera.Transform.Translation);
-        return new Vector2(offset.X, offset.Y) / Camera.Zoom;
+        var offset = new Vector3(ScreenCursor, 0f) - (Camera.Camera.Transform.Translation);
+        return new Vector2(offset.X, offset.Y) / Camera.Camera.Zoom;
     }
 
     // -- Initialization

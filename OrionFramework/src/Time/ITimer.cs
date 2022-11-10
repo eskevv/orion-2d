@@ -1,4 +1,4 @@
-namespace OrionFramework;
+namespace OrionFramework.Time;
 
 public interface ITimer
 {

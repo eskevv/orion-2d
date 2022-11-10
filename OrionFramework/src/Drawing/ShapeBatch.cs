@@ -1,8 +1,8 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using System;
 
-namespace OrionFramework;
+namespace OrionFramework.Drawing;
 
 public class ShapeBatch : IDisposable
 {

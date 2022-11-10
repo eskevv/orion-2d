@@ -1,11 +1,13 @@
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using System.Collections.Generic;
-using System.Linq;
+using OrionFramework.AssetManagement;
 using OrionFramework.Drawing;
+using OrionFramework.Helpers;
 
-namespace OrionFramework;
+namespace OrionFramework.UserInterface.CellGrid;
 
 public class CellGrid
 {
@@ -31,7 +33,7 @@ public class CellGrid
     private int TopBorder => (int)Position.Y;
     private int RightBorder => (int)Position.X + ContainerWidth;
     private int BottomBorder => (int)Position.Y + ContainerHeight;
-    private bool ContainerHovered => Collision.RectContainsCursor(LeftBorder, TopBorder, RightBorder, BottomBorder);
+    private bool ContainerHovered => OrionHelp.RectContainsCursor(LeftBorder, TopBorder, RightBorder, BottomBorder);
 
     // -- Initialization
 
@@ -67,7 +69,7 @@ public class CellGrid
 
     private void HoveredCell(ItemCell cell)
     {
-        if (Collision.RectContainsCursor(cell.Position.X, cell.Position.Y, _cellSize, _cellSize))
+        if (OrionHelp.RectContainsCursor(cell.Position.X, cell.Position.Y, _cellSize, _cellSize))
             cell.Hovered();
     }
 
@@ -98,7 +100,7 @@ public class CellGrid
     {
         _cells.ForEach(x => x.Reset());
 
-        if (Input.Pressed(Keys.I))
+        if (Input.Input.Pressed(Keys.I))
             Drawn = !Drawn;
 
         if (ContainerHovered && _cells.TrueForAll(x => !x.IsHovered))

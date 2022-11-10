@@ -1,6 +1,6 @@
 using System;
 
-namespace OrionFramework;
+namespace OrionFramework.Animation;
 
 public class KeyFrame
 {

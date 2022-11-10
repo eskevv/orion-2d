@@ -1,6 +1,7 @@
-using Microsoft.Xna.Framework;
 using System.Collections.Generic;
-namespace OrionFramework;
+using Microsoft.Xna.Framework;
+
+namespace OrionFramework.Physics;
 
 public class Shape
 {

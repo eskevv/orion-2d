@@ -1,4 +1,4 @@
-namespace OrionFramework;
+namespace OrionFramework.Particles;
 
 public struct ParticleEmitterData
 {

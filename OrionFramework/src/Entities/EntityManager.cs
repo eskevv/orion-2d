@@ -1,22 +1,19 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using OrionFramework.Entities;
 
-namespace OrionFramework;
+namespace OrionFramework.Entities;
 
 public class EntityManager
 {
     // -- Properties / Fields
 
-    private List<Entity> _entities = new();
+    private readonly List<Entity> _entities = new();
 
     // -- Public Interface
 
-    public void Add(Entity entity, string? tag = null)
+    public void Add(Entity entity)
     {
         entity.Id = _entities.Count;
-        entity.Tag = tag;
         _entities.Add(entity);
     }
 
@@ -24,7 +21,7 @@ public class EntityManager
     {
         foreach (var entity in _entities.Reverse<Entity>())
             entity.Update();
-        
+
         _entities.RemoveAll(x => !x.Active);
     }
 

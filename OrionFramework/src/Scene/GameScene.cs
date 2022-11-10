@@ -1,4 +1,6 @@
 using OrionFramework.Drawing;
+using OrionFramework.Entities;
+using OrionFramework.MapGeneration;
 using OrionFramework.UserInterface;
 
 namespace OrionFramework.Scene;
@@ -32,7 +34,7 @@ public class GameScene
 
     public void Draw()
     {
-        Batcher.Begin(Camera.Transform);
+        Batcher.Begin(Camera.Camera.Transform);
         MapManager.Draw();
         EntityManager.Draw();
         Batcher.Present();

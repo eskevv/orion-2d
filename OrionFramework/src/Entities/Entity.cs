@@ -12,6 +12,7 @@ public abstract class Entity
     public Vector2 Velocity { get; set; }
     public bool Active { get; set; } = true;
     public Texture2D? Texture { get; set; }
+    public bool FacingRight { get; set; }
 
     protected Entity(string name, Vector2 position, string? tag = null)
     {

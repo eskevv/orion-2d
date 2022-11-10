@@ -1,6 +1,8 @@
 using Microsoft.Xna.Framework;
+using OrionFramework.Helpers;
+using OrionFramework.Particles.Emitters;
 
-namespace OrionFramework;
+namespace OrionFramework.Particles;
 
 public class ParticleEmitter
 {
@@ -19,10 +21,10 @@ public class ParticleEmitter
     private void Emit(Vector2 position)
     {
         ParticleData data = _data.Data;
-        data.LifeSpan = GameMath.RandomFloat(_data.LifeSpanMin, _data.LifeSpanMax);
-        data.Speed = GameMath.RandomFloat(_data.SpeedMin, _data.SpeedMax);
+        data.LifeSpan = OrionHelp.RandomFloat(_data.LifeSpanMin, _data.LifeSpanMax);
+        data.Speed = OrionHelp.RandomFloat(_data.SpeedMin, _data.SpeedMax);
 
-        float r = GameMath.NextFloat() * 2 - 1;
+        float r = OrionHelp.NextFloat() * 2 - 1;
         data.Angle += _data.AngleVariance * r;
 
         ParticleManager.AddParticle(new Particle(data, position));
@@ -33,7 +35,7 @@ public class ParticleEmitter
         if (!Active)
             return;
 
-        _intervalLeft -= Time.DeltaTime;
+        _intervalLeft -= Time.Time.DeltaTime;
 
         while (_intervalLeft <= 0f)
         {

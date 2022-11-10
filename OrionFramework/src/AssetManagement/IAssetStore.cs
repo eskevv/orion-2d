@@ -1,4 +1,4 @@
-namespace OrionFramework;
+namespace OrionFramework.AssetManagement;
 
 interface IAssetStore
 { }

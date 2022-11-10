@@ -1,9 +1,12 @@
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework;
 using System;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using OrionFramework.AssetManagement;
 using OrionFramework.Drawing;
+using OrionFramework.Helpers;
+using OrionFramework.Input;
 
-namespace OrionFramework;
+namespace OrionFramework.UserInterface.Button;
 
 public class Button
 {
@@ -44,7 +47,7 @@ public class Button
 
     public void Update()
     {
-        if (Collision.RectContainsCursor(_position.X, _position.Y, HitWidth, HitHeight) && Input.Pressed(MouseButton.LeftButton))
+        if (OrionHelp.RectContainsCursor(_position.X, _position.Y, HitWidth, HitHeight) && Input.Input.Pressed(MouseButton.LeftButton))
         {
             _tint = Color.DarkGray;
             Click();

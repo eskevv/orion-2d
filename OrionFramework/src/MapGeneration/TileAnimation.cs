@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 
-namespace OrionFramework;
+namespace OrionFramework.MapGeneration;
 
 public class TileAnimation
 {
@@ -18,7 +18,7 @@ public class TileAnimation
 
     public void Update()
     {
-        _timeLeft -= Time.DeltaTime;
+        _timeLeft -= Time.Time.DeltaTime;
 
         if (_timeLeft <= 0f)
         {

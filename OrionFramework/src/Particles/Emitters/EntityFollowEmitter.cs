@@ -1,7 +1,7 @@
 using Microsoft.Xna.Framework;
 using OrionFramework.Entities;
 
-namespace OrionFramework;
+namespace OrionFramework.Particles.Emitters;
 
 public class EntityFollowEmitter : IEmitter
 {

@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 
-namespace OrionFramework;
+namespace OrionFramework.Particles.Emitters;
 
 public interface IEmitter
 {

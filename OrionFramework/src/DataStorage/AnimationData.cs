@@ -1,9 +1,10 @@
 using System.Collections.Generic;
 using Microsoft.Xna.Framework.Graphics;
 using Newtonsoft.Json;
-using OrionFramework.DataStorage;
+using OrionFramework.Animation;
+using OrionFramework.AssetManagement;
 
-namespace OrionFramework;
+namespace OrionFramework.DataStorage;
 
 public struct AnimationData : IDataModel
 {

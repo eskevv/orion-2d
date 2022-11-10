@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace OrionFramework;
+namespace OrionFramework.AssetManagement;
 
 class AssetStore<T> : IAssetStore
 {

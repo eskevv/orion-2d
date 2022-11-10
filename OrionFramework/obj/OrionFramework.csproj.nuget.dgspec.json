@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ClassLibs\\OrionFramework\\OrionFramework\\OrionFramework.csproj": {}
+    "D:\\ClassLibraries\\OrionFramework\\OrionFramework\\OrionFramework.csproj": {}
   },
   "projects": {
-    "D:\\ClassLibs\\FirstLight\\FirstLight.csproj": {
+    "D:\\ClassLibraries\\FirstLight\\FirstLight.csproj": {
       "version": "1.1.2",
       "restore": {
-        "projectUniqueName": "D:\\ClassLibs\\FirstLight\\FirstLight.csproj",
+        "projectUniqueName": "D:\\ClassLibraries\\FirstLight\\FirstLight.csproj",
         "projectName": "FirstLight",
-        "projectPath": "D:\\ClassLibs\\FirstLight\\FirstLight.csproj",
+        "projectPath": "D:\\ClassLibraries\\FirstLight\\FirstLight.csproj",
         "packagesPath": "C:\\Users\\eskevv\\.nuget\\packages\\",
-        "outputPath": "D:\\ClassLibs\\FirstLight\\obj\\",
+        "outputPath": "D:\\ClassLibraries\\FirstLight\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "D:\\ClassLibs\\FirstLight\\NuGet.Config",
+          "D:\\ClassLibraries\\FirstLight\\NuGet.Config",
           "C:\\Users\\eskevv\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -73,14 +73,14 @@
         }
       }
     },
-    "D:\\ClassLibs\\OrionFramework\\OrionFramework\\OrionFramework.csproj": {
+    "D:\\ClassLibraries\\OrionFramework\\OrionFramework\\OrionFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ClassLibs\\OrionFramework\\OrionFramework\\OrionFramework.csproj",
+        "projectUniqueName": "D:\\ClassLibraries\\OrionFramework\\OrionFramework\\OrionFramework.csproj",
         "projectName": "OrionFramework",
-        "projectPath": "D:\\ClassLibs\\OrionFramework\\OrionFramework\\OrionFramework.csproj",
+        "projectPath": "D:\\ClassLibraries\\OrionFramework\\OrionFramework\\OrionFramework.csproj",
         "packagesPath": "C:\\Users\\eskevv\\.nuget\\packages\\",
-        "outputPath": "D:\\ClassLibs\\OrionFramework\\OrionFramework\\obj\\",
+        "outputPath": "D:\\ClassLibraries\\OrionFramework\\OrionFramework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\eskevv\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -97,8 +97,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\ClassLibs\\FirstLight\\FirstLight.csproj": {
-                "projectPath": "D:\\ClassLibs\\FirstLight\\FirstLight.csproj"
+              "D:\\ClassLibraries\\FirstLight\\FirstLight.csproj": {
+                "projectPath": "D:\\ClassLibraries\\FirstLight\\FirstLight.csproj"
               }
             }
           }

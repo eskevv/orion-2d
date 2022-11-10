@@ -1,7 +1,8 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using OrionFramework.AssetManagement;
 
-namespace OrionFramework;
+namespace OrionFramework.Particles;
 
 public struct ParticleData
 {

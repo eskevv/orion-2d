@@ -1,12 +1,15 @@
-using FirstLight;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using FirstLight;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using System.Linq;
-using System;
+using OrionFramework.AssetManagement;
 using OrionFramework.Entities;
+using OrionFramework.Helpers;
+using OrionFramework.Physics;
 
-namespace OrionFramework;
+namespace OrionFramework.MapGeneration;
 
 public class MapManager
 {
@@ -130,8 +133,8 @@ public class MapManager
 
     private bool CanBeDrawn(Vector2 position, float range)
     {
-        bool inX = position.X >= Camera.Position.X - range && position.X <= Camera.Position.X + range;
-        bool inY = position.Y >= Camera.Position.Y - range && position.Y <= Camera.Position.Y + range;
+        bool inX = position.X >= Camera.Camera.Position.X - range && position.X <= Camera.Camera.Position.X + range;
+        bool inY = position.Y >= Camera.Camera.Position.Y - range && position.Y <= Camera.Camera.Position.Y + range;
         return (inX && inY);
     }
 }

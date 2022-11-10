@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KUDAMbSLii4h+bwD7DRtmS2LM54K+Uu0JUW02HPIp+wcPkf6z3DeoEkZlW45OJdnHf11oSEmqIAAK3kEbg8L6A==",
+  "dgSpecHash": "symWvseuEglNMQvwW4gt0D3kjIWuAu9S2/90M4HhkgHkkPYa4pPH0APdwA52aZatoxtBk9+lkiiO9uw2WJaAiQ==",
   "success": true,
-  "projectFilePath": "D:\\ClassLibs\\OrionFramework\\OrionFramework\\OrionFramework.csproj",
+  "projectFilePath": "D:\\ClassLibraries\\OrionFramework\\OrionFramework\\OrionFramework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eskevv\\.nuget\\packages\\imgui.net\\1.88.0\\imgui.net.1.88.0.nupkg.sha512",
     "C:\\Users\\eskevv\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512",

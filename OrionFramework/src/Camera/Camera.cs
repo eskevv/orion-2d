@@ -1,8 +1,8 @@
+using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using System;
 
-namespace OrionFramework;
+namespace OrionFramework.Camera;
 
 public static class Camera
 {
@@ -37,7 +37,7 @@ public static class Camera
     private static Matrix GetTransform()
     {
         Viewport vp = _device.Viewport;
-        return Matrix.CreateTranslation((int)-Position.X, (int)-Position.Y, 0f) *
+        return Matrix.CreateTranslation(-Position.X, (int)-Position.Y, 0f) *
            Matrix.CreateRotationZ(Rotation) *
            Matrix.CreateScale(new Vector3(_zoom, _zoom, 1)) *
            Matrix.CreateTranslation(vp.Width * 0.5f, vp.Height * 0.5f, 0f);

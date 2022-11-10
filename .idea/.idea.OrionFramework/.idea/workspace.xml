@@ -4,7 +4,415 @@
     <projectFile>Tester/Tester.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="885c1880-ec38-4c33-b268-41d46b281926" name="Changes" comment="" />
+    <list default="true" id="885c1880-ec38-4c33-b268-41d46b281926" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/OrionFramework.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Runner/src/Main/Monster.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Runner/src/Main/PlayerWeapon.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/global.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OrionFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OrionFramework/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework.sln" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/FirstLight.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/FirstLight.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/FirstLight.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/FirstLight.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/OrionFramework.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/OrionFramework.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/OrionFramework.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/bin/Debug/net6.0/OrionFramework.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/OrionFramework.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/ref/OrionFramework.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/ref/OrionFramework.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/refint/OrionFramework.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/refint/OrionFramework.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/OrionFramework.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/OrionFramework.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/OrionFramework.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/OrionFramework.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Animation/Animation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Animation/Animation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Animation/Animator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Animation/Animator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Animation/FrameData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Animation/FrameData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Animation/KeyFrame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Animation/KeyFrame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/AssetManagement/AssetManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/AssetManagement/AssetManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/AssetManagement/AssetStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/AssetManagement/AssetStore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/AssetManagement/IAssetStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/AssetManagement/IAssetStore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/BaseEngine/Engine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/BaseEngine/Engine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/BaseEngine/Screen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/BaseEngine/Screen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Camera/Camera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Camera/Camera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/DataStorage/AnimationData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/DataStorage/AnimationData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/DataStorage/IDataModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/DataStorage/IDataModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Drawing/Batcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Drawing/Batcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Drawing/ShapeBatch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Drawing/ShapeBatch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Editor/SceneEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Editor/Square.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Editor/SquareDatabase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Entities/DefaultEntity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Entities/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Entities/Entity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Entities/EntityManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Entities/EntityManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Input/Input.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Input/Input.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Input/Mouse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Input/Mouse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/MapGeneration/MapManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/MapGeneration/MapManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/MapGeneration/MapTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/MapGeneration/MapTile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/MapGeneration/TileAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/MapGeneration/TileAnimation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/MapGeneration/TileFrame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/MapGeneration/TileFrame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Particles/Emitters/EntityFollowEmitter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Particles/Emitters/EntityFollowEmitter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Particles/Emitters/IEmitter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Particles/Emitters/IEmitter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Particles/Emitters/MouseEmitter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Particles/Emitters/MouseEmitter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Particles/Emitters/StaticEmitter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Particles/Emitters/StaticEmitter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Particles/Particle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Particles/Particle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Particles/ParticleData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Particles/ParticleData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Particles/ParticleEmitter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Particles/ParticleEmitter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Particles/ParticleEmitterData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Particles/ParticleEmitterData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Particles/ParticleManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Particles/ParticleManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Physics/AABB.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Physics/AABB.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Physics/Body.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Physics/Body.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Physics/Environment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Physics/Environment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Physics/Force.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Physics/Force.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Physics/MovingObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Physics/MovingObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Physics/Shape.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Physics/Shape.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Physics/ShapeType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Physics/ShapeType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Physics/World.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Physics/World.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Scene/GameScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Scene/GameScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Scene/SceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Scene/SceneManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Scene/TypeSceneInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Scene/TypeSceneInitializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/StaticHelpers/CollectionHelp.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/StaticHelpers/Collision.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/StaticHelpers/FileHelp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Helpers/ExtensionEngine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/StaticHelpers/GameMath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Helpers/OrionHelp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/StaticHelpers/SmartEngine.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Time/ITimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Time/ITimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Time/Time.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Time/Time.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/Time/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/Time/Timer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/UserInterface/Button/Button.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/UserInterface/Button/Button.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/UserInterface/CellGrid/CellGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/UserInterface/CellGrid/CellGrid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/UserInterface/CellGrid/HoverEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/UserInterface/CellGrid/HoverEffect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/UserInterface/CellGrid/ItemCell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/UserInterface/CellGrid/ItemCell.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/UserInterface/CellGrid/ScaledHover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/UserInterface/CellGrid/ScaledHover.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/UserInterface/DialogBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/UserInterface/DialogBox.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/UserInterface/UiManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/UserInterface/UiManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrionFramework/src/UserInterface/UiWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrionFramework/src/UserInterface/UiWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/.config/dotnet-tools.json" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/.config/dotnet-tools.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/Content.mgcb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/Content.mgcb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/GUI.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/GUI.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/Grass.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/Grass.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/Silver.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/Silver.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/_gentle.tmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/assets/gentle 32x32 v01.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/assets/gentle 32x32 v01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/assets/gentle 32x32 v02.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/assets/gentle 32x32 v02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/assets/gentle 32x32 v03.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/assets/gentle 32x32 v03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/assets/gentle forest v01.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/assets/gentle forest v01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/assets/gentle forest v02.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/assets/gentle forest v02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/assets/gentle forest v03.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/assets/gentle forest v03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/assets/gentle trees 80x96 v01.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/assets/gentle trees 80x96 v01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/assets/gentle trees 80x96 v02.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/assets/gentle trees 80x96 v02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/assets/gentle trees 80x96 v03.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/assets/gentle trees 80x96 v03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/assets/gentle water sparkles A v01.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/assets/gentle water sparkles A v01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/assets/gentle water sparkles A v02.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/assets/gentle water sparkles A v02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/assets/gentle water sparkles A v03.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/assets/gentle water sparkles A v03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/assets/gentle waterfall A v01.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/assets/gentle waterfall A v01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/assets/gentle waterfall A v02.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/assets/gentle waterfall A v02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/assets/gentle waterfall A v03.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/assets/gentle waterfall A v03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/GUI.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/GUI.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/animations/basic_bow_attack.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/animations/basic_bow_attack.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/animations/basic_bow_idle.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/animations/basic_bow_idle.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/animations/basic_bow_run.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/animations/basic_bow_run.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/animations/dwarf_idle.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/animations/dwarf_idle.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/animations/dwarf_run.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/animations/dwarf_run.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/arrow.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/arrow.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/assets/gentle 32x32 v01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/assets/gentle 32x32 v01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/assets/gentle 32x32 v02.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/assets/gentle 32x32 v02.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/assets/gentle 32x32 v03.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/assets/gentle 32x32 v03.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/assets/gentle forest v01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/assets/gentle forest v01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/assets/gentle forest v02.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/assets/gentle forest v02.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/assets/gentle forest v03.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/assets/gentle forest v03.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/assets/gentle trees 80x96 v01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/assets/gentle trees 80x96 v01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/assets/gentle trees 80x96 v02.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/assets/gentle trees 80x96 v02.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/assets/gentle trees 80x96 v03.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/assets/gentle trees 80x96 v03.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/assets/gentle water sparkles A v01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/assets/gentle water sparkles A v01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/assets/gentle water sparkles A v02.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/assets/gentle water sparkles A v02.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/assets/gentle water sparkles A v03.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/assets/gentle water sparkles A v03.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/assets/gentle waterfall A v01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/assets/gentle waterfall A v01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/assets/gentle waterfall A v02.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/assets/gentle waterfall A v02.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/assets/gentle waterfall A v03.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/assets/gentle waterfall A v03.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/barbarian_idle_01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/barbarian_idle_01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/basic_bow_idle_01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/basic_bow_idle_01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/cursor_normal.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/cursor_normal.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/dwarf_idle_01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/dwarf_idle_01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/forest_tileset.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/forest_tileset.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/gameFont.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/gameFont.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/gentle 32x32 v01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/gentle 32x32 v01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/gentle 32x32 v02.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/gentle 32x32 v02.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/gentle 32x32 v03.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/gentle 32x32 v03.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/gentle forest v01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/gentle forest v01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/gentle forest v02.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/gentle forest v02.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/gentle forest v03.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/gentle forest v03.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/gentle trees 80x96 v01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/gentle trees 80x96 v01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/gentle trees 80x96 v02.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/gentle trees 80x96 v02.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/gentle trees 80x96 v03.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/gentle trees 80x96 v03.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/gentle water sparkles A v01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/gentle water sparkles A v01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/gentle water sparkles A v02.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/gentle water sparkles A v02.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/gentle water sparkles A v03.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/gentle water sparkles A v03.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/gentle waterfall A v01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/gentle waterfall A v01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/gentle waterfall A v02.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/gentle waterfall A v02.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/gentle waterfall A v03.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/gentle waterfall A v03.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/grass-tile-2.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/grass-tile-2.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/grass-tile-3.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/grass-tile-3.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/grass-tile.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/grass-tile.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/hero.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/hero.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/hurt.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/hurt.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/jamician_atk_1.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/jamician_atk_1.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/knight_idle.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/knight_idle.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/knight_run.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/knight_run.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/lizard_idle_01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/lizard_idle_01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/npc.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/npc.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/particle.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/particle.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/rhino_idle_01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/rhino_idle_01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/sword_1.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/sword_1.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/bin/DesktopGL/Content/tileset.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/bin/DesktopGL/Content/tileset.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gameFont.spritefont" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/gameFont.spritefont" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gen.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/gen.tmx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle 32x32 v01.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle 32x32 v02.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle 32x32 v03.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle 32x32 v04.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle 32x32 v05.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle 32x32 v06.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle 32x32 v07.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle 32x32 v08.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle 32x32 v09.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle 32x32 v10.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle forest v01.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle forest v02.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle forest v03.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle forest v04.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle forest v05.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle forest v06.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle forest v07.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle forest v08.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle forest v09.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle forest v10.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle trees 80x96 v01.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle trees 80x96 v02.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle trees 80x96 v03.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle trees 80x96 v04.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle trees 80x96 v05.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle trees 80x96 v06.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle trees 80x96 v07.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle trees 80x96 v08.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle trees 80x96 v09.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle trees 80x96 v10.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle water sparkles A v01.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle water sparkles A v02.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle water sparkles A v03.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle water sparkles A v04.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle water sparkles A v05.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle water sparkles A v06.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle water sparkles A v07.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle water sparkles A v08.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle water sparkles A v09.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle water sparkles A v10.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle waterfall A v01.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle waterfall A v02.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle waterfall A v03.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle waterfall A v04.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle waterfall A v05.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle waterfall A v06.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle waterfall A v07.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle waterfall A v08.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle waterfall A v09.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/gentle waterfall A v10.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/grass-tile-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/grass-tile-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/grass-tile-2.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/grass-tile-2.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/grass-tile-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/grass-tile-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/grass-tile-3.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/grass-tile-3.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/grass-tile.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/grass-tile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/grass-tile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/grass-tile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/hero.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/hero.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/knight_idle.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/knight_idle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/knight_run.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/knight_run.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/npc.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/npc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/.mgstats" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/.mgstats" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/GUI.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/GUI.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/animations/basic_bow_attack.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/animations/basic_bow_attack.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/animations/basic_bow_idle.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/animations/basic_bow_idle.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/animations/basic_bow_run.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/animations/basic_bow_run.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/animations/dwarf_idle.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/animations/dwarf_idle.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/animations/dwarf_run.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/animations/dwarf_run.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/arrow.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/arrow.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle 32x32 v01.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/assets/gentle 32x32 v01.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle 32x32 v02.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/assets/gentle 32x32 v02.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle 32x32 v03.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/assets/gentle 32x32 v03.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle forest v01.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/assets/gentle forest v01.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle forest v02.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/assets/gentle forest v02.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle forest v03.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/assets/gentle forest v03.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle trees 80x96 v01.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/assets/gentle trees 80x96 v01.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle trees 80x96 v02.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/assets/gentle trees 80x96 v02.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle trees 80x96 v03.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/assets/gentle trees 80x96 v03.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle water sparkles A v01.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/assets/gentle water sparkles A v01.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle water sparkles A v02.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/assets/gentle water sparkles A v02.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle water sparkles A v03.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/assets/gentle water sparkles A v03.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle waterfall A v01.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/assets/gentle waterfall A v01.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle waterfall A v02.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/assets/gentle waterfall A v02.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/assets/gentle waterfall A v03.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/assets/gentle waterfall A v03.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/barbarian_idle_01.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/barbarian_idle_01.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/basic_bow_idle_01.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/basic_bow_idle_01.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/cursor_normal.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/cursor_normal.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/dwarf_idle_01.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/dwarf_idle_01.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/forest_tileset.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/forest_tileset.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/gameFont.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/gameFont.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/gentle 32x32 v01.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/gentle 32x32 v01.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/gentle 32x32 v02.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/gentle 32x32 v02.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/gentle 32x32 v03.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/gentle 32x32 v03.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/gentle forest v01.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/gentle forest v01.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/gentle forest v02.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/gentle forest v02.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/gentle forest v03.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/gentle forest v03.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/gentle trees 80x96 v01.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/gentle trees 80x96 v01.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/gentle trees 80x96 v02.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/gentle trees 80x96 v02.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/gentle trees 80x96 v03.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/gentle trees 80x96 v03.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/gentle water sparkles A v01.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/gentle water sparkles A v01.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/gentle water sparkles A v02.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/gentle water sparkles A v02.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/gentle water sparkles A v03.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/gentle water sparkles A v03.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/gentle waterfall A v01.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/gentle waterfall A v01.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/gentle waterfall A v02.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/gentle waterfall A v02.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/gentle waterfall A v03.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/gentle waterfall A v03.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/grass-tile-2.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/grass-tile-2.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/grass-tile-3.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/grass-tile-3.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/grass-tile.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/grass-tile.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/hero.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/hero.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/hurt.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/hurt.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/jamician_atk_1.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/jamician_atk_1.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/knight_idle.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/knight_idle.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/knight_run.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/knight_run.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/lizard_idle_01.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/lizard_idle_01.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/npc.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/npc.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/particle.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/particle.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/rhino_idle_01.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/rhino_idle_01.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/sword_1.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/sword_1.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/obj/DesktopGL/net6.0/Content/tileset.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/obj/DesktopGL/net6.0/Content/tileset.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/sword_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/sword_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/tileset.png" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/tileset.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/tileset.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/tileset.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Content/town.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Content/town.tmx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Data/animations.json" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Data/animations.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Data/characters.json" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Data/characters.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Data/projectiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Data/projectiles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Icon.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Icon.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Icon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Icon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/Tester.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/Runner.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/app.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/app.manifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/GUI.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/GUI.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/animations/basic_bow_attack.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/animations/basic_bow_attack.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/animations/basic_bow_idle.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/animations/basic_bow_idle.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/animations/basic_bow_run.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/animations/basic_bow_run.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/animations/dwarf_idle.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/animations/dwarf_idle.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/animations/dwarf_run.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/animations/dwarf_run.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/arrow.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/arrow.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/assets/gentle 32x32 v01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/assets/gentle 32x32 v01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/assets/gentle 32x32 v02.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/assets/gentle 32x32 v02.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/assets/gentle 32x32 v03.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/assets/gentle 32x32 v03.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/assets/gentle forest v01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/assets/gentle forest v01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/assets/gentle forest v02.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/assets/gentle forest v02.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/assets/gentle forest v03.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/assets/gentle forest v03.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/assets/gentle trees 80x96 v01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/assets/gentle trees 80x96 v01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/assets/gentle trees 80x96 v02.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/assets/gentle trees 80x96 v02.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/assets/gentle trees 80x96 v03.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/assets/gentle trees 80x96 v03.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/assets/gentle water sparkles A v01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/assets/gentle water sparkles A v01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/assets/gentle water sparkles A v02.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/assets/gentle water sparkles A v02.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/assets/gentle water sparkles A v03.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/assets/gentle water sparkles A v03.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/assets/gentle waterfall A v01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/assets/gentle waterfall A v01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/assets/gentle waterfall A v02.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/assets/gentle waterfall A v02.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/assets/gentle waterfall A v03.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/assets/gentle waterfall A v03.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/barbarian_idle_01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/barbarian_idle_01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/basic_bow_idle_01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/basic_bow_idle_01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/cursor_normal.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/cursor_normal.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/dwarf_idle_01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/dwarf_idle_01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/forest_tileset.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/forest_tileset.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/gameFont.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/gameFont.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/gentle 32x32 v01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/gentle 32x32 v01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/gentle 32x32 v02.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/gentle 32x32 v02.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/gentle 32x32 v03.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/gentle 32x32 v03.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/gentle forest v01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/gentle forest v01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/gentle forest v02.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/gentle forest v02.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/gentle forest v03.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/gentle forest v03.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/gentle trees 80x96 v01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/gentle trees 80x96 v01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/gentle trees 80x96 v02.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/gentle trees 80x96 v02.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/gentle trees 80x96 v03.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/gentle trees 80x96 v03.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/gentle water sparkles A v01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/gentle water sparkles A v01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/gentle water sparkles A v02.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/gentle water sparkles A v02.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/gentle water sparkles A v03.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/gentle water sparkles A v03.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/gentle waterfall A v01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/gentle waterfall A v01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/gentle waterfall A v02.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/gentle waterfall A v02.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/gentle waterfall A v03.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/gentle waterfall A v03.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/grass-tile-2.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/grass-tile-2.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/grass-tile-3.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/grass-tile-3.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/grass-tile.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/grass-tile.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/hero.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/hero.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/hurt.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/hurt.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/jamician_atk_1.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/jamician_atk_1.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/knight_idle.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/knight_idle.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/knight_run.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/knight_run.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/lizard_idle_01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/lizard_idle_01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/npc.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/npc.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/particle.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/particle.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/rhino_idle_01.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/rhino_idle_01.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/sword_1.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/sword_1.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Content/tileset.xnb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Content/tileset.xnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/FirstLight.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/FirstLight.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/FirstLight.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/FirstLight.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/ImGui.NET.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/ImGui.NET.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/MonoGame.Framework.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/MonoGame.Framework.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Newtonsoft.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Newtonsoft.Json.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/OrionFramework.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/OrionFramework.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/OrionFramework.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Tester.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Tester.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Tester.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/Debug/net6.0/Tester.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Tester.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Tester.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Tester.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/Debug/net6.0/Tester.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/Tester.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Tester.runtimeconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/runtimes/linux-x64/native/libSDL2-2.0.so.0" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/runtimes/linux-x64/native/libSDL2-2.0.so.0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/runtimes/linux-x64/native/libcimgui.so" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/runtimes/linux-x64/native/libcimgui.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/runtimes/linux-x64/native/libopenal.so.1" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/runtimes/linux-x64/native/libopenal.so.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/runtimes/osx/native/libSDL2.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/runtimes/osx/native/libSDL2.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/runtimes/osx/native/libcimgui.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/runtimes/osx/native/libcimgui.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/runtimes/osx/native/libopenal.1.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/runtimes/osx/native/libopenal.1.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/runtimes/win-x64/native/SDL2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/runtimes/win-x64/native/SDL2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/runtimes/win-x64/native/cimgui.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/runtimes/win-x64/native/cimgui.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/runtimes/win-x64/native/soft_oal.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/runtimes/win-x64/native/soft_oal.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/runtimes/win-x86/native/SDL2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/runtimes/win-x86/native/SDL2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/runtimes/win-x86/native/cimgui.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/runtimes/win-x86/native/cimgui.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/bin/Debug/net6.0/runtimes/win-x86/native/soft_oal.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/runtimes/win-x86/native/soft_oal.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/imgui.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/imgui.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/Debug/net6.0/Tester.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/Debug/net6.0/Tester.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/Debug/net6.0/Tester.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/Debug/net6.0/Tester.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/Debug/net6.0/Tester.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.csproj.CopyComplete" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/Debug/net6.0/Tester.csproj.CopyComplete" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/Debug/net6.0/Tester.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/Debug/net6.0/Tester.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Runner.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/Debug/net6.0/Tester.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/Tester.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/bin/Debug/net6.0/Runner.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/Debug/net6.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/ref/Tester.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/Debug/net6.0/ref/Tester.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Debug/net6.0/refint/Tester.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/Debug/net6.0/refint/Tester.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Tester.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/Tester.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Tester.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/Tester.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/Tester.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/Tester.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/src/Main/AnimatedSprite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/src/Main/AnimatedSprite.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/src/Main/EngineRuntime.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/src/Main/GameRunner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/src/Main/EntityState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/src/Main/EntityState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/src/Main/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/src/Main/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/src/Main/PlayerWeapon.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tester/src/Main/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Runner/src/Main/Program.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +424,9 @@
     <setting file="file://$PROJECT_DIR$/OrionFramework/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/OrionFramework/src/DataStorage/DataBank.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/OrionFramework/src/Entities/Entity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Runner/src/Main/AnimatedSprite.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Runner/src/Main/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Runner/src/Main/PlayerWeapon.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -31,16 +442,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Tester" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -50,7 +461,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Tester/Tester.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Runner/Runner.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -84,7 +495,8 @@
       <workItem from="1667857648801" duration="3593000" />
       <workItem from="1667928078931" duration="13153000" />
       <workItem from="1667946283504" duration="1459000" />
-      <workItem from="1668013444918" duration="14264000" />
+      <workItem from="1668013444918" duration="27794000" />
+      <workItem from="1668044718270" duration="18100000" />
     </task>
     <task id="LOCAL-00001" summary="added and tested scene manager with app">
       <created>1667692963182</created>

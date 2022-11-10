@@ -1,7 +1,7 @@
-using Microsoft.Xna.Framework;
 using System;
+using Microsoft.Xna.Framework;
 
-namespace OrionFramework;
+namespace OrionFramework.Physics;
 
 public abstract class MovingObject
 {
@@ -38,7 +38,7 @@ public abstract class MovingObject
 
     private void CleanUpFields()
     {
-        Position += Velocity * Time.DeltaTime * Environment.PixelsPerMeter;
+        Position += Velocity * Time.Time.DeltaTime * Environment.PixelsPerMeter;
         Bounds = new AABB(Position, Bounds.HalfSize.X * 2, Bounds.HalfSize.Y * 2);
 
         CollisionIndicator = Color.White;

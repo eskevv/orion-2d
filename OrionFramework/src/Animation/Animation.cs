@@ -1,11 +1,10 @@
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
-using OrionFramework.DataStorage;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using OrionFramework.Drawing;
 
-namespace OrionFramework;
+namespace OrionFramework.Animation;
 
 public class Animation
 {
@@ -18,7 +17,7 @@ public class Animation
     private readonly Texture2D _texture;
     private readonly List<KeyFrame> _keyFrames = new();
 
-    public int CurrentFrame { get; private set; }
+    public int CurrentFrame { get; set; }
     private float _frameTimeLeft;
     private bool _active = true;
 
@@ -62,7 +61,7 @@ public class Animation
         if (!_active)
             return;
 
-        _frameTimeLeft -= Time.DeltaTime;
+        _frameTimeLeft -= Time.Time.DeltaTime;
 
         JustFinished = _frameTimeLeft <= 0f && CurrentFrame == _frameCount - 1;
         
