@@ -17,7 +17,7 @@ namespace Tester.Main;
 
 public class GameRunner : Engine
 {
-    private void EngineSetup()
+    protected override void EngineSetup()
     {
         Content.RootDirectory = "Content";
         IsMouseVisible = true;
@@ -27,7 +27,6 @@ public class GameRunner : Engine
 
         Screen.PreferredBackBufferWidth = 1600;
         Screen.PreferredBackBufferHeight = 900;
-        Screen.ApplyChanges();
 
         Camera.Zoom = 2f;
         Camera.SetLimits(0, Screen.Width, 0, Screen.Height * 4);
@@ -38,28 +37,12 @@ public class GameRunner : Engine
     {
         base.Initialize();
 
-        EngineSetup();
-
         DataBank.AddDataType<AnimationData>("Data/animations.json");
         SceneManager.AddScene(new GameScene("town"));
 
         var player = new Player("player", new Vector2(500, 500), "player");
         var bat = new Monster("bat", new Vector2(400, 600));
-        SceneManager.AddEntityToScene(player);
-        SceneManager.AddEntityToScene(bat);
-    }
-
-    protected override void Update(GameTime gameTime)
-    {
-        base.Update(gameTime);
-
-        SceneManager.Update();
-    }
-
-    protected override void Draw(GameTime gameTime)
-    {
-        base.Draw(gameTime);
-
-        SceneManager.Draw();
+        SceneManager.AddEntity(player);
+        SceneManager.AddEntity(bat);
     }
 }

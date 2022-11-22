@@ -184,3 +184,97 @@ D:\ClassLibraries\OrionFramework\Runner\obj\Debug\net6.0\Runner.genruntimeconfig
 D:\ClassLibraries\OrionFramework\Runner\obj\Debug\net6.0\ref\Runner.dll
 D:\ClassLibraries\OrionFramework\Runner\bin\Debug\net6.0\Content\slash.xnb
 D:\ClassLibraries\OrionFramework\Runner\bin\Debug\net6.0\Content\bat.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\animations\basic_bow_attack.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\animations\basic_bow_idle.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\animations\basic_bow_run.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\animations\dwarf_idle.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\animations\dwarf_run.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\arrow.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\barbarian_idle_01.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\basic_bow_idle_01.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\cursor_normal.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\dwarf_idle_01.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\forest_tileset.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\gentle 32x32 v01.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\gentle 32x32 v02.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\gentle 32x32 v03.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\gentle forest v01.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\gentle forest v02.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\gentle forest v03.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\gentle trees 80x96 v01.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\gentle trees 80x96 v02.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\gentle trees 80x96 v03.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\gentle water sparkles A v01.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\gentle water sparkles A v02.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\gentle water sparkles A v03.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\gentle waterfall A v01.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\gentle waterfall A v02.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\gentle waterfall A v03.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\hurt.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\jamician_atk_1.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\lizard_idle_01.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\particle.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\rhino_idle_01.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\assets\gentle 32x32 v01.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\assets\gentle 32x32 v02.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\assets\gentle 32x32 v03.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\assets\gentle forest v01.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\assets\gentle forest v02.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\assets\gentle forest v03.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\assets\gentle trees 80x96 v01.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\assets\gentle trees 80x96 v02.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\assets\gentle trees 80x96 v03.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\assets\gentle water sparkles A v01.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\assets\gentle water sparkles A v02.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\assets\gentle water sparkles A v03.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\assets\gentle waterfall A v01.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\assets\gentle waterfall A v02.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\assets\gentle waterfall A v03.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\bat.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\gameFont.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\grass-tile-2.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\grass-tile-3.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\grass-tile.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\GUI.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\hero.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\knight_idle.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\knight_run.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\npc.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\slash.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\sword_1.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Content\tileset.xnb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Runner.exe
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Runner.deps.json
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Runner.runtimeconfig.json
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Runner.dll
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Runner.pdb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\ImGui.NET.dll
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\MonoGame.Framework.dll
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\runtimes\linux-x64\native\libcimgui.so
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\runtimes\osx\native\libcimgui.dylib
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\runtimes\win-x64\native\cimgui.dll
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\runtimes\win-x86\native\cimgui.dll
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\runtimes\linux-x64\native\libopenal.so.1
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\runtimes\osx\native\libSDL2.dylib
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\runtimes\osx\native\libopenal.1.dylib
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\runtimes\win-x64\native\SDL2.dll
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\runtimes\win-x64\native\soft_oal.dll
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\runtimes\win-x86\native\SDL2.dll
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\runtimes\win-x86\native\soft_oal.dll
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\FirstLight.dll
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\OrionFramework.dll
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\OrionFramework.pdb
+D:\Projects\large-scale\OrionFramework\Runner\bin\Debug\net6.0\FirstLight.pdb
+D:\Projects\large-scale\OrionFramework\Runner\obj\Debug\net6.0\Runner.csproj.AssemblyReference.cache
+D:\Projects\large-scale\OrionFramework\Runner\obj\Debug\net6.0\Runner.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\large-scale\OrionFramework\Runner\obj\Debug\net6.0\Runner.AssemblyInfoInputs.cache
+D:\Projects\large-scale\OrionFramework\Runner\obj\Debug\net6.0\Runner.AssemblyInfo.cs
+D:\Projects\large-scale\OrionFramework\Runner\obj\Debug\net6.0\Runner.csproj.CoreCompileInputs.cache
+D:\Projects\large-scale\OrionFramework\Runner\obj\Debug\net6.0\Runner.csproj.CopyComplete
+D:\Projects\large-scale\OrionFramework\Runner\obj\Debug\net6.0\Runner.dll
+D:\Projects\large-scale\OrionFramework\Runner\obj\Debug\net6.0\refint\Runner.dll
+D:\Projects\large-scale\OrionFramework\Runner\obj\Debug\net6.0\Runner.pdb
+D:\Projects\large-scale\OrionFramework\Runner\obj\Debug\net6.0\Runner.genruntimeconfig.cache
+D:\Projects\large-scale\OrionFramework\Runner\obj\Debug\net6.0\ref\Runner.dll

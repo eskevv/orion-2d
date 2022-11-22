@@ -359,19 +359,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\eskevv\\.nuget\\packages\\": {}
+    "C:\\Users\\eskevv\\.nuget\\packages\\": {},
+    "D:\\Programs\\Microsoft\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ClassLibraries\\OrionFramework\\Runner\\Runner.csproj",
+      "projectUniqueName": "D:\\Projects\\large-scale\\OrionFramework\\Runner\\Runner.csproj",
       "projectName": "Runner",
-      "projectPath": "D:\\ClassLibraries\\OrionFramework\\Runner\\Runner.csproj",
+      "projectPath": "D:\\Projects\\large-scale\\OrionFramework\\Runner\\Runner.csproj",
       "packagesPath": "C:\\Users\\eskevv\\.nuget\\packages\\",
-      "outputPath": "D:\\ClassLibraries\\OrionFramework\\Runner\\obj\\",
+      "outputPath": "D:\\Projects\\large-scale\\OrionFramework\\Runner\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Programs\\Microsoft\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\eskevv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -385,8 +390,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\ClassLibraries\\OrionFramework\\OrionFramework\\OrionFramework.csproj": {
-              "projectPath": "D:\\ClassLibraries\\OrionFramework\\OrionFramework\\OrionFramework.csproj"
+            "D:\\Projects\\large-scale\\OrionFramework\\OrionFramework\\OrionFramework.csproj": {
+              "projectPath": "D:\\Projects\\large-scale\\OrionFramework\\OrionFramework\\OrionFramework.csproj"
             }
           }
         }
@@ -429,24 +434,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.11, 6.0.11]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.11, 6.0.11]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.11, 6.0.11]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.11, 6.0.11]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ClassLibraries\\OrionFramework\\OrionFramework\\OrionFramework.csproj": {}
+    "D:\\Projects\\large-scale\\OrionFramework\\OrionFramework\\OrionFramework.csproj": {}
   },
   "projects": {
-    "D:\\ClassLibraries\\FirstLight\\FirstLight.csproj": {
+    "D:\\Projects\\large-scale\\FirstLight\\FirstLight.csproj": {
       "version": "1.1.2",
       "restore": {
-        "projectUniqueName": "D:\\ClassLibraries\\FirstLight\\FirstLight.csproj",
+        "projectUniqueName": "D:\\Projects\\large-scale\\FirstLight\\FirstLight.csproj",
         "projectName": "FirstLight",
-        "projectPath": "D:\\ClassLibraries\\FirstLight\\FirstLight.csproj",
+        "projectPath": "D:\\Projects\\large-scale\\FirstLight\\FirstLight.csproj",
         "packagesPath": "C:\\Users\\eskevv\\.nuget\\packages\\",
-        "outputPath": "D:\\ClassLibraries\\FirstLight\\obj\\",
+        "outputPath": "D:\\Projects\\large-scale\\FirstLight\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Programs\\Microsoft\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "D:\\ClassLibraries\\FirstLight\\NuGet.Config",
+          "D:\\Projects\\large-scale\\FirstLight\\NuGet.Config",
           "C:\\Users\\eskevv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -50,20 +54,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.11, 6.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.11, 6.0.11]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.11, 6.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -73,17 +63,21 @@
         }
       }
     },
-    "D:\\ClassLibraries\\OrionFramework\\OrionFramework\\OrionFramework.csproj": {
+    "D:\\Projects\\large-scale\\OrionFramework\\OrionFramework\\OrionFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ClassLibraries\\OrionFramework\\OrionFramework\\OrionFramework.csproj",
+        "projectUniqueName": "D:\\Projects\\large-scale\\OrionFramework\\OrionFramework\\OrionFramework.csproj",
         "projectName": "OrionFramework",
-        "projectPath": "D:\\ClassLibraries\\OrionFramework\\OrionFramework\\OrionFramework.csproj",
+        "projectPath": "D:\\Projects\\large-scale\\OrionFramework\\OrionFramework\\OrionFramework.csproj",
         "packagesPath": "C:\\Users\\eskevv\\.nuget\\packages\\",
-        "outputPath": "D:\\ClassLibraries\\OrionFramework\\OrionFramework\\obj\\",
+        "outputPath": "D:\\Projects\\large-scale\\OrionFramework\\OrionFramework\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Programs\\Microsoft\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\eskevv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,8 +91,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\ClassLibraries\\FirstLight\\FirstLight.csproj": {
-                "projectPath": "D:\\ClassLibraries\\FirstLight\\FirstLight.csproj"
+              "D:\\Projects\\large-scale\\FirstLight\\FirstLight.csproj": {
+                "projectPath": "D:\\Projects\\large-scale\\FirstLight\\FirstLight.csproj"
               }
             }
           }
@@ -137,20 +131,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.11, 6.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.11, 6.0.11]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.11, 6.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

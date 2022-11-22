@@ -20,7 +20,7 @@ public static class SceneManager
         selectedScene?.UiManager.AddUiWindow(uiWindow);
     }
 
-    public static void AddEntityToScene(Entity entity, string? sceneName = null)
+    public static void AddEntity(Entity entity, string? sceneName = null)
     {
         var selectedScene = sceneName is null ? _currentScene : _scenes.Find(x => x.Name == sceneName);
         selectedScene?.EntityManager.Add(entity);
