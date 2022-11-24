@@ -1,5 +1,6 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using OrionFramework.Physics;
 
 namespace OrionFramework.Drawing;
 
@@ -52,13 +53,13 @@ public static class Batcher
         _addedShape = true;
     }
 
-    public static void DrawFillRect(Rectangle rect, Color? color = null)
+    public static void DrawFillRect(Rectangle rect, Color? color = null, float rotation = 0, bool outline = false, Color? outlineColor = null)
     {
         if (_addedTexture)
             FlushTextures();
 
         var fillColor = color ?? _defaultColor;
-        _shapeBatcher.DrawFillRect(rect.X, rect.Y, rect.Width, rect.Height, fillColor);
+        _shapeBatcher.DrawFillRect(rect.X, rect.Y, rect.Width, rect.Height, fillColor, rotation, outline, outlineColor);
         _addedShape = true;
     }
 
@@ -78,6 +79,7 @@ public static class Batcher
             FlushTextures();
 
         var fillColor = color ?? _defaultColor;
+
         _shapeBatcher.DrawRect(rect.X, rect.Y, rect.Width, rect.Height, fillColor, thickness, rotation);
         _addedShape = true;
     }
@@ -92,13 +94,23 @@ public static class Batcher
         _addedShape = true;
     }
 
-    public static void DrawCircle(int x, int y, float radius, Color? color = null, int thickness = 1, float rotation = 0f)
+    public static void DrawCircle(Vector2 position, float radius, Color? color = null, int thickness = 1, float rotation = 0f)
     {
         if (_addedTexture)
             FlushTextures();
 
         var fillColor = color ?? _defaultColor;
-        _shapeBatcher.DrawCircle(x, y, radius, fillColor, thickness, rotation);
+        _shapeBatcher.DrawCircle((int)position.X, (int)position.Y, radius, fillColor, thickness, rotation);
+        _addedShape = true;
+    }
+
+    public static void DrawCircle(Circle circle, Color? color = null, int thickness = 1, float rotation = 0f)
+    {
+        if (_addedTexture)
+            FlushTextures();
+
+        var fillColor = color ?? _defaultColor;
+        _shapeBatcher.DrawCircle(circle.X, circle.Y, circle.Radius, fillColor, thickness, rotation);
         _addedShape = true;
     }
 
@@ -112,23 +124,23 @@ public static class Batcher
         _addedShape = true;
     }
 
-    public static void DrawPolygon(int x, int y, int sides, float radius, Color? color = null, int thickness = 1, float rotation = 0f)
+    public static void DrawPolygon(Vector2 position, int sides, float radius, Color? color = null, int thickness = 1, float rotation = 0f)
     {
         if (_addedTexture)
             FlushTextures();
 
         var fillColor = color ?? _defaultColor;
-        _shapeBatcher.DrawPolygon(x, y, sides, radius, fillColor, thickness);
+        _shapeBatcher.DrawPolygon((int)position.X, (int)position.Y, sides, radius, fillColor, thickness, rotation);
         _addedShape = true;
     }
 
-    public static void DrawFillPolygon(int x, int y, int sides, float radius, Color? color = null, float rotation = 0f)
+    public static void DrawFillPolygon(Vector2 position, int sides, float radius, Color? color = null, float rotation = 0f)
     {
         if (_addedTexture)
             FlushTextures();
 
         var fillColor = color ?? _defaultColor;
-        _shapeBatcher.DrawFillPolygon(x, y, sides, radius, fillColor, rotation);
+        _shapeBatcher.DrawFillPolygon((int)position.X, (int)position.Y, sides, radius, fillColor, rotation);
         _addedShape = true;
     }
 
@@ -155,14 +167,14 @@ public static class Batcher
         _addedTexture = true;
     }
 
-    public static void Begin(Matrix? transform = null)
+    internal static void Begin(Matrix? transform = null)
     {
         _transform = transform;
         _shapeBatcher.Begin(transform, null);
         _spriteBatcher.Begin(samplerState: SamplerState.PointClamp, transformMatrix: transform);
     }
 
-    public static void Present()
+    internal static void Present()
     {
         _shapeBatcher.End();
         _spriteBatcher.End();

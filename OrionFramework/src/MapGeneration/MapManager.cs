@@ -8,6 +8,8 @@ using OrionFramework.AssetManagement;
 using OrionFramework.Entities;
 using OrionFramework.Helpers;
 using OrionFramework.Physics;
+using OrionFramework.CameraView;
+using OrionFramework.Drawing;
 
 namespace OrionFramework.MapGeneration;
 
@@ -16,11 +18,18 @@ public class MapManager
     // Properties / Fields
 
     public List<TiledObjectGroup> Objects = new();
-    
+    public int ExtraDrawRange { get; set; } = 100;
+
     private List<MapTile> _tiles = new();
     private List<MapTile> _notDrawn = new();
     private List<AABB> _tileColliders = new();
     private List<Entity> _instanceEntities = new();
+    private Rectangle[] _grid;
+
+    public Vector2 MapSize => new Vector2(_map.Columns, _map.Rows);
+    public int TileSize => _map.TileWidth;
+
+    public bool ShowGrid { get; set; }
 
     private string _levelName;
     private TileMap _map;
@@ -33,8 +42,22 @@ public class MapManager
         _map = MapLoader.Load($"content/{levelName}.tmx");
         LoadTiles(_map);
         LoadObjects(_map);
+        SetMapGrid();
     }
-    
+
+    private void SetMapGrid()
+    {
+        _grid = new Rectangle[(int)MapSize.X * (int)MapSize.Y];
+
+        for (int x = 0; x < _grid.Length; x++)
+        {
+            int row = x % (int)MapSize.X;
+            int column = x / (int)MapSize.X;
+            _grid[x] = new Rectangle(column * TileSize, row * TileSize, TileSize, TileSize);
+        }
+    }
+
+
     private void LoadTiles(TileMap map)
     {
         foreach (var layer in map.TileLayers!)
@@ -125,16 +148,13 @@ public class MapManager
     public void Draw()
     {
         var drawn_tiles = _tiles
-            .Where(x => CanBeDrawn(x.Position, 500f))
+            .Where(x => OrionHelp.InScreenBounds(x.Position, ExtraDrawRange))
             .ToList();
 
         drawn_tiles.ForEach(x => x.Draw());
-    }
 
-    private bool CanBeDrawn(Vector2 position, float range)
-    {
-        bool inX = position.X >= Camera.Camera.Position.X - range && position.X <= Camera.Camera.Position.X + range;
-        bool inY = position.Y >= Camera.Camera.Position.Y - range && position.Y <= Camera.Camera.Position.Y + range;
-        return (inX && inY);
+        if (ShowGrid)
+            foreach (var tile in _grid)
+                Batcher.DrawRect(tile, new Color(30, 30, 30, 50));
     }
 }

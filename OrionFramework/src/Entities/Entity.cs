@@ -5,7 +5,6 @@ namespace OrionFramework.Entities;
 
 public abstract class Entity
 {
-    public string Name;
     public int Id;
     public string? Tag { get; set; }
     public Vector2 Position { get; set; }
@@ -14,11 +13,10 @@ public abstract class Entity
     public Texture2D? Texture { get; set; }
     public bool FacingRight { get; set; }
 
-    protected Entity(string name, Vector2 position, string? tag = null)
+    protected Entity(Vector2? position = null, string? tag = null)
     {
-        Position = position;
+        Position = position ?? Vector2.Zero;
         Tag = tag;
-        Name = name;
     }
 
     public abstract void Update();

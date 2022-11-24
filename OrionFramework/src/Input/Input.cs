@@ -1,6 +1,7 @@
 using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
+using OrionFramework.CameraView;
 
 namespace OrionFramework.Input;
 
@@ -20,11 +21,10 @@ public static class Input
 
     // -- Helpers
 
-    public static Vector2 ScreenCursor => new Vector2(_currentMouse.X, _currentMouse.Y);
+    public static Vector2 ScreenCursor => new (_currentMouse.X, _currentMouse.Y);
     public static Vector2 WorldCursor => GetWorldCursor();
-    public static float RawHorizontal => GetRawHorizontal();
-    public static float RawVertical => GetRawVertical();
     public static Vector2 RawAxes => GetVectorInput();
+    public static Vector2 NormalAxes => GetNormalInput();
 
     private static float GetRawHorizontal()
     {
@@ -46,14 +46,23 @@ public static class Input
 
     private static Vector2 GetVectorInput()
     {
-        Vector2 axes = new Vector2(RawHorizontal, RawVertical);
+        var axes = new Vector2(GetRawHorizontal(), GetRawVertical());
         return axes == Vector2.Zero ? axes : Vector2.Normalize(axes);
+    }
+
+     private static Vector2 GetNormalInput()
+    {
+        var axes = GetVectorInput();
+        if (axes.LengthSquared() > 1)
+            axes.Normalize();
+        
+        return axes;
     }
 
     private static Vector2 GetWorldCursor()
     {
-        var offset = new Vector3(ScreenCursor, 0f) - (Camera.Camera.Transform.Translation);
-        return new Vector2(offset.X, offset.Y) / Camera.Camera.Zoom;
+        var offset = new Vector3(ScreenCursor, 0f) - Camera.Transform.Translation;
+        return new Vector2(offset.X, offset.Y) / Camera.Zoom;
     }
 
     // -- Initialization
@@ -85,9 +94,6 @@ public static class Input
     public static bool IsHeld(Keys key) =>
        _currentKeyboard.IsKeyDown(key);
 
-    public static bool IsUp(Keys key) =>
-       _currentKeyboard.IsKeyUp(key);
-
 
     // -- Mouse
 
@@ -99,9 +105,6 @@ public static class Input
 
     public static bool IsHeld(MouseButton button) =>
        GetCurrentButtonState(button) == ButtonState.Pressed;
-
-    public static bool IsUp(MouseButton button) =>
-       GetCurrentButtonState(button) == ButtonState.Released;
 
     private static ButtonState GetCurrentButtonState(MouseButton button)
     {

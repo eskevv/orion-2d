@@ -1,10 +1,12 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using OrionFramework.BaseEngine;
+using OrionFramework.CameraView;
 
 namespace OrionFramework.Drawing;
 
-public class ShapeBatch : IDisposable
+internal class ShapeBatch : IDisposable
 {
     // -- Properties / Fields
 
@@ -134,7 +136,7 @@ public class ShapeBatch : IDisposable
     // -- Primitive Methods
 
     /// <summary>Draw a primitive filled rectangle.</summary>
-    public void DrawFillRect(float x, float y, float w, float h, Color color)
+    public void DrawFillRect(float x, float y, float w, float h, Color color, float rotation = 0f, bool outline = false, Color? outlineColor = null)
     {
         EnsureStarted();
         EnsureSpace(vertexCount: 4, indexCount: 6);
@@ -152,10 +154,15 @@ public class ShapeBatch : IDisposable
 
         AllocateIndeces(faces: 2);
         AllocateVertices(vertexPositions, color);
+
+        if (outline)
+        {
+            DrawRect(x, y, w, h, outlineColor ?? Color.Black, 1, rotation);
+        }
     }
 
     /// <summary>Draw a primitive line segment with an optional thickness.</summary>
-    public void DrawLine(int x1, int y1, int x2, int y2, Color color, int thickness = 1)
+    public void DrawLine(int x1, int y1, int x2, int y2, Color color, float thickness = 1)
     {
         EnsureStarted();
         EnsureSpace(vertexCount: 4, indexCount: 6);
@@ -265,7 +272,7 @@ public class ShapeBatch : IDisposable
             Vector3 pointTwo = i == positions.Length - 1 ? positions[0] : positions[i + 1];
             DrawLine((int)pointOne.X, (int)pointOne.Y, (int)pointTwo.X, (int)pointTwo.Y, color, thickness);
         }
-        
+
         if (rotation != 0f)
             DrawLine(x, y, (int)positions[^1].X, (int)positions[^1].Y, color, thickness);
     }
@@ -303,6 +310,7 @@ public class ShapeBatch : IDisposable
         int top = (int)y;
         int right = (int)(x + w - 1);
         int bottom = (int)(y + h - 1);
+
 
         DrawLine(left, top, right, top, color, thickness);
         DrawLine(right, top, right, bottom, color, thickness);

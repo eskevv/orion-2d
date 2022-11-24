@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework.Input;
 using OrionFramework.AssetManagement;
 using OrionFramework.Drawing;
 using OrionFramework.Scene;
+using OrionFramework.CameraView;
 
 namespace OrionFramework.BaseEngine;
 
@@ -24,6 +25,10 @@ public abstract class Engine : Game
         ScreenClear = new Color(30, 30, 30);
     }
 
+    protected virtual void EngineSetup()
+    {
+    }
+
     protected override void Initialize()
     {
         base.Initialize();
@@ -32,9 +37,12 @@ public abstract class Engine : Game
         ShapeBatch = new ShapeBatch(GraphicsDevice);
 
         AssetManager.Initialize(Content);
-        Camera.Camera.Initialize(GraphicsDevice);
+        Camera.Initialize(GraphicsDevice);
         Batcher.Initialize(ShapeBatch, SpriteBatch);
         Screen.Initialize(_graphicsManager);
+
+        EngineSetup();
+        Screen.ApplyChanges();
     }
 
     protected override void Update(GameTime gameTime)
@@ -46,6 +54,8 @@ public abstract class Engine : Game
 
         if (Input.Input.Pressed(Keys.Escape))
             Exit();
+
+        SceneManager.Update();
     }
 
     protected override void Draw(GameTime gameTime)
@@ -53,5 +63,6 @@ public abstract class Engine : Game
         base.Draw(gameTime);
 
         GraphicsDevice.Clear(ScreenClear);
+        SceneManager.Draw();
     }
 }

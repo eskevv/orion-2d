@@ -1,6 +1,9 @@
 using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using OrionFramework.BaseEngine;
+using OrionFramework.Physics;
+using OrionFramework.CameraView;
 
 namespace OrionFramework.Helpers;
 
@@ -20,6 +23,7 @@ public static class OrionHelp
         item.X = MathF.Cos(angle + amount) * distance + pointOfRotation.X;
         item.Y = MathF.Sin(angle + amount) * distance + pointOfRotation.Y;
     }
+
 
     /// <summary>Get an angle from a direction using Atan2. The y-axis is not flipped.</summary>
     public static float ToAngle(this Vector2 vector) =>
@@ -44,19 +48,34 @@ public static class OrionHelp
     }
 
     /// <summary>Get the normalized direction from raw keyboard input.</summary>
-    public static Vector2 NormalInputDirection()
+    public static Vector2 Normal(this Vector2 item)
     {
-        var direction = new Vector2(Input.Input.RawHorizontal, Input.Input.RawVertical);
+        if (item.LengthSquared() > 1)
+            item.Normalize();
 
-        if (direction.LengthSquared() > 1)
-            direction.Normalize();
+        return item;
+    }
 
-        return direction;
+    public static float DistanceTo(this Vector2 item, Vector2 other)
+    {
+        return (other - item).Length();
     }
 
     /// <summary>Create a speed vector from an angle and magnitude.</summary>
     public static Vector2 FromPolar(float angle, float magnitude) =>
         magnitude * new Vector2(MathF.Cos(angle), MathF.Sin(angle));
+
+    /// <summary>Tests if a Vector2 is approximately at the same position as the other to avoid rounding errors.</summary>
+    public static bool IsAtPosition(this Vector2 item, Vector2? target)
+    {
+        if (target is null) return false;
+        var targetPosition = new Vector2((int)target.Value.X, (int)target.Value.Y);
+
+        bool inRangeX = item.X >= target.Value.X - 1 && item.X <= target.Value.X + 1;
+        bool inRangeY = item.Y >= target.Value.Y - 1 && item.Y <= target.Value.Y + 1;
+
+        return inRangeX && inRangeY;
+    }
 
     #endregion
 
@@ -93,6 +112,21 @@ public static class OrionHelp
         return containsX && containsY;
     }
 
+    public static bool ContainsPoint(this Rectangle rect, Vector2 position)
+    {
+        bool withinX = position.X >= rect.X && position.X <= rect.X + rect.Width;
+        bool withinY = position.Y >= rect.Y && position.Y <= rect.Y + rect.Height;
+
+        return withinX && withinY;
+    }
+
+    public static bool ContainsPoint(this Circle circle, Vector2 position)
+    {
+        float distanceSquared = (new Vector2(circle.X, circle.Y) - position).LengthSquared();
+
+        return distanceSquared <= (circle.Radius * circle.Radius);
+    }
+
     #endregion
 
     #region Textures
@@ -110,6 +144,17 @@ public static class OrionHelp
         output.SetData<Color>(colors);
         return output;
     }
-
     #endregion
+
+    public static bool InScreenBounds(Vector2 position, float extraRange = 0)
+    {
+        float xRange = (Screen.Width / 2 + extraRange) / Camera.Zoom;
+        float yRange = (Screen.Height / 2 + extraRange) / Camera.Zoom;
+
+        bool outsideRange = position.Y <= Camera.Position.Y - yRange || position.Y >= Camera.Position.Y + yRange;
+        outsideRange |= position.X <= Camera.Position.X - xRange || position.X >= Camera.Position.X + xRange;
+
+        return !outsideRange;
+    }
+
 }

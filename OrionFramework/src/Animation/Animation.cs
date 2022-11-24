@@ -24,7 +24,7 @@ public class Animation
     // -- Arrow Helpers
 
     private Rectangle SrcRect => _srcRects[CurrentFrame];
-    private Vector2 Origin => _frameOrigins[CurrentFrame];
+    private Vector2 Origin => _frameOrigins[CurrentFrame] + new Vector2(SrcRect.Width / 2, SrcRect.Height / 2);
     public bool JustFinished { get; private set; }
 
     // -- Initialization
@@ -64,7 +64,7 @@ public class Animation
         _frameTimeLeft -= Time.Time.DeltaTime;
 
         JustFinished = _frameTimeLeft <= 0f && CurrentFrame == _frameCount - 1;
-        
+
         if (_frameTimeLeft <= 0f)
         {
             CurrentFrame = (CurrentFrame + 1) % _frameCount;
@@ -72,9 +72,9 @@ public class Animation
             foreach (var keyFrame in _keyFrames)
             {
                 if (keyFrame.Frame == CurrentFrame)
-                        keyFrame.Call?.Invoke();
+                    keyFrame.Call?.Invoke();
             }
-            
+
             _frameTimeLeft += _frameTimes[CurrentFrame];
         }
     }

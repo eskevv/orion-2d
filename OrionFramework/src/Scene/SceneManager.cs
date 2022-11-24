@@ -7,7 +7,7 @@ namespace OrionFramework.Scene;
 
 public static class SceneManager
 {
-    private static List<GameScene> _scenes = new();
+    private readonly static List<GameScene> _scenes = new();
     private static GameScene? _currentScene;
 
     public static UiManager UiManager => _currentScene!.UiManager;
@@ -20,7 +20,7 @@ public static class SceneManager
         selectedScene?.UiManager.AddUiWindow(uiWindow);
     }
 
-    public static void AddEntityToScene(Entity entity, string? sceneName = null)
+    public static void AddEntity(Entity entity, string? sceneName = null)
     {
         var selectedScene = sceneName is null ? _currentScene : _scenes.Find(x => x.Name == sceneName);
         selectedScene?.EntityManager.Add(entity);

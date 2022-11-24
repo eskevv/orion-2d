@@ -13,20 +13,18 @@ public struct AnimationData : IDataModel
     public Dictionary<int, string>? KeyFrames;
 
     [JsonConstructor]
-    public AnimationData(string textureName, int[] frames, int ox, int oy, Dictionary<int, string>? keyFrames)
+    public AnimationData(string textureName, int[] frames, int ox, int oy, int width, Dictionary<int, string>? keyFrames = null, int rows = 1, int row = 0)
     {
         Texture = AssetManager.LoadAsset<Texture2D>(textureName);
         KeyFrames = keyFrames;
         Frames = new FrameData[frames.Length];
 
-        int width = Texture.Width / frames.Length;
-
         for (var i = 0; i < frames.Length; i++)
         {
             Frames[i].X = i * width;
-            Frames[i].Y = 0;
+            Frames[i].Y = row * (Texture.Height / rows);
             Frames[i].W = width;
-            Frames[i].H = Texture.Height;
+            Frames[i].H = Texture.Height / rows;
             Frames[i].Ox += ox;
             Frames[i].Oy += oy;
             Frames[i].Duration = frames[i];
