@@ -1,9 +1,8 @@
 # OrionFramework
 Cross-platform Game Framework using XNA and C#
 
-Experimental and working game framework built on top of MonoGame primarily for 2D games.
+Experimental extension library built for MonoGame.
 3D support is already implemented but has not been extended yet for making games with it - soon to be added.
-
 This framework can also be combined with my ECS for a different approach in creating entities.
 
 -- Orion works closely with Tiled to parse your maps and instantiate objects dynamically through a <Key,Type> value pair that you can link to map layers.
