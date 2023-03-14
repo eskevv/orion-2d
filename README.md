@@ -8,8 +8,6 @@ This framework can also be combined with my ECS for a different approach in crea
 -- Orion works closely with Tiled to parse your maps and instantiate objects dynamically through a <Key,Type> value pair that you can link to map layers.
 This is just one approach and there are more ways to create your levels, for example inheriting from the Scene class and adding that to the scene Manager.
 
-**NOTE: To test and run the included working solution - you need to run the application from the ./Tester directory.
-The project already has a reference to the framework so you need to keep all solution paths the same to use the included assets.**
 
 # Using Orion2D
 > Orion2D is an extension library not a full engine. You need to to create a MonoGame project first for the source code to work.
