@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- <PackageReference Include="FirstLight" Version="1.1.2" /> -->
-    <ProjectReference Include="../../FirstLight/FirstLight.csproj" />
+    <PackageReference Include="FirstLight" Version="1.1.2" />
+    <!-- <ProjectReference Include="../../FirstLight/FirstLight.csproj" /> -->
     <PackageReference Include="ImGui.NET" Version="1.88.0" />
     <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />

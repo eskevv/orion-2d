@@ -15,8 +15,8 @@ internal class ShapeBatch : IDisposable
 
     private GraphicsDevice _device;
     private BasicEffect _effect;
-    private VertexPositionColor[] _vertices;
-    private int[] _indeces;
+    private readonly VertexPositionColor[] _vertices;
+    private readonly int[] _indeces;
 
     private int _indexCount;
     private int _vertexCount;
